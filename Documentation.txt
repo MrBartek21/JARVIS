@@ -1,0 +1,4 @@
+0 tylko odpowiedź
+1 odpowiedź z akcją np restart
+2 odpowiedz z akcją i tym co ona zwróci
+3 potwierdzenie wykonania akcji

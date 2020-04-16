@@ -1,0 +1,1 @@
+{"count": 3, "word1": {"name": "wy\u0142\u0105cz si\u0119", "response": "Wy\u0142\u0105czam si\u0119", "actionid": 1, "action": "shutdown"}, "word2": {"name": "restart", "response": "Trwa restart...", "actionid": 1, "action": "restart"}, "word3": {"name": "pogoda", "response": "", "actionid": 2, "action": "weather"}}
