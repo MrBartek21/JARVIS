@@ -183,7 +183,7 @@ def active_agent():
                     tts_engine.say(word_find['response'] + result['weather'])
                     tts_engine.runAndWait()
         else:
-            tts_engine.say("Przepraszam nie zrozumiałem.")
+            tts_engine.say(user_settings['no_response'])
             tts_engine.runAndWait()
             state_aw = add_word(recognize_word, -1, 'ERROR')
 
