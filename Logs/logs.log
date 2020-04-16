@@ -235,3 +235,84 @@
 2020-04-16 22:15:40,811 : INFO : main : <module> : Starting...
 2020-04-16 22:15:40,821 : INFO : main : check_json : The file exists and is valid
 2020-04-16 22:15:40,822 : INFO : main : load_json : File load successfully
+2020-04-16 23:42:41,518 : INFO : main : <module> : Starting...
+2020-04-16 23:42:41,574 : INFO : main : check_json : The file exists and is valid
+2020-04-16 23:42:41,575 : INFO : main : load_json : File load successfully
+2020-04-16 23:48:50,340 : INFO : main : <module> : Starting...
+2020-04-16 23:48:50,343 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:48:50,344 : INFO : main : load_json : File load successfully
+2020-04-16 23:48:50,348 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-16 23:48:50,349 : INFO : main : load_json : File load successfully
+2020-04-16 23:49:08,478 : INFO : main : <module> : Starting...
+2020-04-16 23:49:08,481 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:49:08,482 : INFO : main : load_json : File load successfully
+2020-04-16 23:49:08,486 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-16 23:49:08,487 : INFO : main : load_json : File load successfully
+2020-04-16 23:49:29,799 : INFO : main : <module> : Starting...
+2020-04-16 23:49:29,803 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:49:29,804 : INFO : main : load_json : File load successfully
+2020-04-16 23:49:29,805 : INFO : main : check_json : File not accessible - user.json
+2020-04-16 23:52:35,647 : INFO : main : <module> : Starting...
+2020-04-16 23:52:35,652 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:52:35,653 : INFO : main : load_json : File load successfully
+2020-04-16 23:52:35,653 : INFO : main : check_json : File not accessible - user.json
+2020-04-16 23:52:35,657 : INFO : main : load_json : File load successfully
+2020-04-16 23:52:45,299 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:52:49,488 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:52:57,647 : INFO : main : active_agent : Command registered on active bot - hej
+2020-04-16 23:52:59,806 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:53:04,187 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:53:04,326 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:53:13,198 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-16 23:53:14,759 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:53:14,759 : INFO : function : shutdown : Shutting down...
+2020-04-16 23:53:57,791 : INFO : main : <module> : Starting...
+2020-04-16 23:53:57,795 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:53:57,796 : INFO : main : load_json : File load successfully
+2020-04-16 23:53:57,797 : INFO : main : check_json : File not accessible - user.json
+2020-04-16 23:53:57,805 : INFO : main : load_json : File load successfully
+2020-04-16 23:54:03,004 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:54:03,147 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:54:10,472 : INFO : main : <module> : Starting...
+2020-04-16 23:54:10,473 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:54:10,474 : INFO : main : load_json : File load successfully
+2020-04-16 23:54:10,475 : INFO : main : check_json : File not accessible - user.json
+2020-04-16 23:54:10,479 : INFO : main : load_json : File load successfully
+2020-04-16 23:54:21,267 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:54:21,383 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:54:33,940 : INFO : main : <module> : Starting...
+2020-04-16 23:54:33,944 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:54:33,945 : INFO : main : load_json : File load successfully
+2020-04-16 23:54:33,946 : INFO : main : check_json : File not accessible - user.json
+2020-04-16 23:54:33,950 : INFO : main : load_json : File load successfully
+2020-04-16 23:54:39,806 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:54:39,940 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:54:46,044 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-16 23:54:47,590 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:54:47,591 : INFO : function : shutdown : Shutting down...
+2020-04-16 23:58:33,879 : INFO : main : <module> : Starting...
+2020-04-16 23:58:33,883 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:58:33,884 : INFO : main : load_json : File load successfully
+2020-04-16 23:58:33,885 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-16 23:58:33,886 : INFO : main : load_json : File load successfully
+2020-04-16 23:58:39,299 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:58:39,428 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:59:34,327 : INFO : main : <module> : Starting...
+2020-04-16 23:59:34,331 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-16 23:59:34,332 : INFO : main : load_json : File load successfully
+2020-04-16 23:59:34,338 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-16 23:59:34,339 : INFO : main : load_json : File load successfully
+2020-04-16 23:59:38,624 : INFO : main : <module> : Command registered - alexa
+2020-04-16 23:59:38,760 : INFO : main : add_word : Word added to database successfully
+2020-04-16 23:59:51,463 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-16 23:59:51,849 : INFO : function : weather : Getting weather...
+2020-04-16 23:59:51,849 : INFO : function : weather : Temperatura: 7.62 stopni Celsjusza, ciœnienie: 985 hektopaskali
+2020-04-17 00:00:06,884 : INFO : main : <module> : Command registered - alexa
+2020-04-17 00:00:07,036 : INFO : main : add_word : Word added to database successfully
+2020-04-17 00:00:55,867 : INFO : main : <module> : Starting...
+2020-04-17 00:00:55,871 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-17 00:00:55,872 : INFO : main : load_json : File load successfully
+2020-04-17 00:00:55,872 : INFO : main : check_json : File not accessible - user.json
+2020-04-17 00:00:55,880 : INFO : main : load_json : File load successfully
+2020-04-17 00:00:59,840 : INFO : main : <module> : Command registered - alexa
+2020-04-17 00:00:59,996 : INFO : main : add_word : Word added to database successfully

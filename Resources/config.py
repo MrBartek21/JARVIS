@@ -13,8 +13,12 @@ LOG_LEVEL = logging.INFO
 LOG_FOLDER = 'Logs'
 LOG_FILE = 'logs.log'
 
-LANG = "pl"
-ACTIVATOR = "alexa"
-RESPONSE = "Słucham"
+# LANG = "pl"
+# ACTIVATOR = "alexa"
+# RESPONSE = "Słucham"
 
 FILE_NAME_WORDS = "words.json"
+FILE_NAME_USER = "user.json"
+FILE_NAME_USER_DEAFULT = "deafult_user.json"
+
+SETTINGS_FOLDER = "Deafult"

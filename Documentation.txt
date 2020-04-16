@@ -2,3 +2,22 @@
 1 odpowiedź z akcją np restart
 2 odpowiedz z akcją i tym co ona zwróci
 3 potwierdzenie wykonania akcji
+
+deafult_user.json
+    ustawienia domyślne tylko w wypadku gdy nie będzie wykrytych ustawień uzytkownika i gdy nie będzie włożonej karty SD
+
+user.json
+    ustawienia użytkownika ładowane podczas startu asystenta
+
+words.json
+    słowa, zwroty po których ma być określona akcja
+
+config.py
+    konfiguracja asystenta, zawiera ważne ustawienia do poprawnego działania asystenta
+
+
+TODO
+    led status działania - power
+    led słuchania - ring na zielono
+    led błędu - ring na czerwono
+    led braku pliku - ring na pomarańczowo

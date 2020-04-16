@@ -9,41 +9,48 @@ import Resources.function as function
 
 
 # Check config file before init
-def check_json(file_js, choice):
+def check_json(file_js, choice, create):
     try:
         with open(file_js) as f:
-            print("The file exists and is valid")
-            logging.info("The file exists and is valid")
+            print("The file exists and is valid - "+file_js)
+            logging.info("The file exists and is valid - "+file_js)
+
+            state = True
     except IOError:
-        print("File not accessible")
-        logging.info("File not accessible")
-        f = open(file_js, "a")
+        print("File not accessible - "+file_js)
+        logging.info("File not accessible - "+file_js)
 
-        if choice == "words":
-            data = {
-                "count": 3,
-                "word1": {
-                    "name": "wyłącz się",
-                    "response": "Wyłączam się",
-                    "actionid": 1,
-                    "action": "shutdown"
-                },
-                "word2": {
-                    "name": "restart",
-                    "response": "Trwa restart...",
-                    "actionid": 1,
-                    "action": "restart"
-                },
-                "word3": {
-                    "name": "pogoda",
-                    "response": "",
-                    "actionid": 2,
-                    "action": "weather"
+        if create:
+            f = open(file_js, "a")
+
+            if choice == "words":
+                data = {
+                    "count": 3,
+                    "word1": {
+                        "name": "wyłącz się",
+                        "response": "Wyłączam się",
+                        "actionid": 1,
+                        "action": "shutdown"
+                    },
+                    "word2": {
+                        "name": "restart",
+                        "response": "Trwa restart...",
+                        "actionid": 1,
+                        "action": "restart"
+                    },
+                    "word3": {
+                        "name": "pogoda",
+                        "response": "",
+                        "actionid": 2,
+                        "action": "weather"
+                    }
                 }
-            }
 
-        f.write(json.dumps(data))
-        f.close()
+            f.write(json.dumps(data))
+            f.close()
+
+        state = False
+    return state
 
 
 # load json file
@@ -96,7 +103,7 @@ def recognize_speech_from_mic(recognizer, microphone):
     }
 
     try:
-        response["transcription"] = recognizer.recognize_google(audio, language=config.LANG)
+        response["transcription"] = recognizer.recognize_google(audio, language=user_settings['lang'])
     except sr.RequestError:
         # API was unreachable or unresponsive
         response["success"] = False
@@ -133,7 +140,7 @@ def short(text, choice):
 
 
 def active_agent():
-    tts_engine.say(config.RESPONSE)
+    tts_engine.say(user_settings['response'])
     tts_engine.runAndWait()
 
     # Wait for a user speech
@@ -181,27 +188,41 @@ def active_agent():
             state_aw = add_word(recognize_word, -1, 'ERROR')
 
 
-# Main loop
+# Main function
 if __name__ == "__main__":
+    # Microfon and Recognizer init
     recognizer = sr.Recognizer()
     microphone = sr.Microphone()
+
+    # TTS Engine init
     tts_engine = pyttsx3.init()
+
+    # Logging init
     logging.basicConfig(format=config.LOG_FORMAT, filename=config.LOG_FOLDER+'/'+config.LOG_FILE, level=config.LOG_LEVEL)
     logging.info("Starting...")
-    check_json(config.FILE_NAME_WORDS, 'words')
+
+    # Check all files config
+    check_json(config.FILE_NAME_WORDS, 'words', True)
     words = load_json(config.FILE_NAME_WORDS)
 
+    user_sett_state = check_json(config.FILE_NAME_USER, 'user_settings', False)
+    if user_sett_state:
+        user_settings = load_json(config.FILE_NAME_USER)
+    else:
+        user_settings = load_json(config.SETTINGS_FOLDER+'/'+config.FILE_NAME_USER_DEAFULT)
+
+    # Main loop
     while True:
         # Wait for a user speech
         user_word = recognize_speech_from_mic(recognizer, microphone)
         print(user_word)
 
-        # If speech is recognize corectly
+        # If speech is recognize correctly
         if user_word['success']:
             recognize_word = user_word['transcription'].lower()
             logging.info("Command registered - " + recognize_word)
             state_aw = add_word(recognize_word, 0, "")
 
             # If user activate a bot
-            if recognize_word == config.ACTIVATOR:
+            if recognize_word == user_settings['activator']:
                 active_agent()
