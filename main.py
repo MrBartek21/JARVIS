@@ -163,18 +163,23 @@ def active_agent():
             action_id = word_find['actionid']
             if action_id == 0:
                 # Only response
+                logging.info("ACTION " + str(action_id) + " - " + word_find['action'])
                 tts_engine.say(word_find['response'])
                 tts_engine.runAndWait()
             elif action_id == 1:
                 # Response and action
+                logging.info("ACTION " + str(action_id) + " - " + word_find['action'])
+
                 tts_engine.say(word_find['response'])
                 tts_engine.runAndWait()
 
-                state_aw = add_word(recognize_word, action_id, word_find['action'])
+                state_aw = add_word(recognize_word, str(action_id), word_find['action'])
 
                 method_to_call = getattr(function, word_find['action'])
                 result = method_to_call()
             elif action_id == 2:
+                logging.info("ACTION " + str(action_id) + " - " + word_find['action'])
+
                 method_to_call = getattr(function, word_find['action'])
                 result = method_to_call()
                 print(result)

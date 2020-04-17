@@ -347,3 +347,41 @@
 2020-04-17 18:24:48,587 : INFO : main : add_word : Word added to database successfully
 2020-04-17 18:24:48,588 : INFO : function : shutdown : Shutting down...
 2020-04-17 18:24:48,610 : INFO : function : restart : Restarting...
+2020-04-18 00:05:46,681 : INFO : main : <module> : Starting...
+2020-04-18 00:05:46,689 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 00:05:46,689 : INFO : main : load_json : File load successfully
+2020-04-18 00:05:46,696 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 00:05:46,697 : INFO : main : load_json : File load successfully
+2020-04-18 00:05:54,057 : INFO : main : <module> : Command registered - alexa
+2020-04-18 00:05:54,551 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:06:00,364 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-18 00:06:00,684 : INFO : function : weather : Getting weather...
+2020-04-18 00:06:00,693 : INFO : function : weather : Temperatura: 6.11 stopni Celsjusza, ciœnienie: 1017 hektopaskali
+2020-04-18 00:06:25,028 : INFO : main : <module> : Starting...
+2020-04-18 00:06:25,031 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 00:06:25,032 : INFO : main : load_json : File load successfully
+2020-04-18 00:06:25,035 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 00:06:25,036 : INFO : main : load_json : File load successfully
+2020-04-18 00:06:39,761 : INFO : main : <module> : Command registered - alexa
+2020-04-18 00:06:39,972 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:06:46,752 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-18 00:06:47,020 : INFO : function : weather : Getting weather...
+2020-04-18 00:06:47,021 : INFO : function : weather : Temperatura: 6.11 stopni Celsjusza, ciœnienie: 1017 hektopaskali
+2020-04-18 00:06:47,021 : INFO : main : active_agent : ACTION 2 -  - weather
+2020-04-18 00:07:05,243 : INFO : main : <module> : Command registered - alexa
+2020-04-18 00:07:05,394 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:07:13,915 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-18 00:07:15,356 : INFO : main : active_agent : ACTION 1 - Wy³¹czam siê - shutdown
+2020-04-18 00:07:15,511 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:07:15,511 : INFO : function : shutdown : Shutting down...
+2020-04-18 00:10:52,513 : INFO : main : <module> : Starting...
+2020-04-18 00:10:52,516 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 00:10:52,517 : INFO : main : load_json : File load successfully
+2020-04-18 00:10:52,523 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 00:10:52,526 : INFO : main : load_json : File load successfully
+2020-04-18 00:11:05,390 : INFO : main : <module> : Command registered - alexa
+2020-04-18 00:11:05,568 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:11:18,120 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-18 00:11:18,121 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-18 00:11:19,679 : INFO : main : add_word : Word added to database successfully
+2020-04-18 00:11:19,679 : INFO : function : shutdown : Shutting down...

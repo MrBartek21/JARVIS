@@ -30,7 +30,6 @@ def weather():
             if res_decode['Code'] == 0:
                 # print(res_encode)
                 logging.info('Getting weather...')
-                # logging.info('Word added to database successfully')
 
                 weather_json = res_decode['Weather']
                 print(weather_json['main'])
