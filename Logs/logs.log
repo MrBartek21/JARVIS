@@ -385,3 +385,8 @@
 2020-04-18 00:11:18,121 : INFO : main : active_agent : ACTION 1 - shutdown
 2020-04-18 00:11:19,679 : INFO : main : add_word : Word added to database successfully
 2020-04-18 00:11:19,679 : INFO : function : shutdown : Shutting down...
+2020-04-18 01:54:53,382 : INFO : main : <module> : Starting...
+2020-04-18 01:54:53,389 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 01:54:53,391 : INFO : main : load_json : File load successfully
+2020-04-18 01:54:53,398 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 01:54:53,399 : INFO : main : load_json : File load successfully

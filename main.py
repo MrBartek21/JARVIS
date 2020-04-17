@@ -97,21 +97,29 @@ def recognize_speech_from_mic(recognizer, microphone):
         audio = recognizer.listen(source)
 
     response = {
+        "state": None,
         "success": True,
-        "error": None,
         "transcription": None
     }
 
+
+    '''
+    state = ok jezeli przetłumaczono słowa
+    state = api jezeli nie mozna poczłaczy wymagany restart 
+    state = unable recognize jezeli nie mozna rozpoznac, czekanie na kolejna kolejke
+    '''
+
     try:
         response["transcription"] = recognizer.recognize_google(audio, language=user_settings['lang'])
+        response["state"] = "OK"
     except sr.RequestError:
         # API was unreachable or unresponsive
+        response["state"] = "API"
         response["success"] = False
-        response["error"] = "API unavailable"
     except sr.UnknownValueError:
         # speech was unintelligible
+        response["state"] = "Unable_Recognize"
         response["success"] = False
-        response["error"] = "Unable to recognize speech"
     return response
 
 
@@ -223,7 +231,7 @@ if __name__ == "__main__":
         print(user_word)
 
         # If speech is recognize correctly
-        if user_word['success']:
+        if user_word['state'] == "OK":
             recognize_word = user_word['transcription'].lower()
             logging.info("Command registered - " + recognize_word)
             state_aw = add_word(recognize_word, 0, "")
@@ -231,3 +239,8 @@ if __name__ == "__main__":
             # If user activate a bot
             if recognize_word == user_settings['activator']:
                 active_agent()
+        elif user_word['state'] == "API":
+            # Unable to connect to server recognize
+            logging.info("Unable to connect to server, restart wymagany")
+            tts_engine.say(user_settings['api_response'])
+            tts_engine.runAndWait()
