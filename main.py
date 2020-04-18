@@ -16,13 +16,8 @@ def check_connection():
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                # Validation Status Code
-                if res_encode['Status'] == "OK":
-                    status = True
-                    logging.info('Server connection valid')
-                else:
-                    status = False
-                    logging.info('Server connection not valid - '+res_encode['Status'])
+                status = True
+                logging.info('Server connection valid')
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
         status = False
@@ -31,7 +26,7 @@ def check_connection():
 
 
 # Check update
-def check_update(userid):
+def check_update(userid, file):
     try:
         with urllib.request.urlopen(
                 config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=update&key=' + config.TOKEN_UPDATE) as response:
@@ -42,8 +37,7 @@ def check_update(userid):
 
                 # Validation Status Code
                 if res_encode['Status'] == "OK":
-                    status = True
-                    logging.info('Server connection valid')
+                    pass
                 else:
                     status = False
                     logging.info('Server connection not valid - ' + res_encode['Status'])
@@ -52,16 +46,15 @@ def check_update(userid):
         print(e.reason)
         status = False
 
-    return status
+    return False
 
 
 # Get system info
 def system_info(userid):
-    sys_info = {'machine': platform.machine(), 'version': platform.version(), 'platform': platform.platform(),
-                'uname': platform.uname(), 'system': platform.system(), 'processor': platform.processor()}
+    sys_info = {'machine': platform.machine(), 'version': platform.version(), 'system': platform.system()}
 
     try:
-        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS+'&add=True&UserID='+userid+'&machine='+sys_info['machine']+'&version='+sys_info['version']+'&platform='+sys_info['platform']+'&uname='+sys_info['uname']+'&system='+sys_info['system']+'&processor='+sys_info['processor']) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS+'&add=Yes&UserID='+userid+'&Code='+config.CODE+'&machine='+sys_info['machine']+'&version='+sys_info['version']+'&system='+sys_info['system']) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
@@ -99,6 +92,11 @@ def add_word(text, actionid, action):
     return status
 
 
+# Led information function
+def led(color, anim):
+    print(color)
+
+
 # ====================================[FILE FUNCTION]====================================
 # Check file
 def check_json(file_js):
@@ -121,7 +119,7 @@ def load_json(file_js):
     with open(file_js, 'r') as file:
         data = file.read().replace('\n', '')
         data = json.loads(data)
-        logging.info("File load successfully")
+        logging.info("File load successfully - " + file_js)
     return data
 
 # =======================================================================================
@@ -245,6 +243,7 @@ def active_agent():
 
 # Main function
 if __name__ == "__main__":
+    active = False
     # Microfon and Recognizer init
     recognizer = sr.Recognizer()
     microphone = sr.Microphone()
@@ -258,33 +257,41 @@ if __name__ == "__main__":
 
     # Check connection init
     if check_connection():
-        # Active main loop and check all file
-        if check_json(config.FILE_USER):
-            user_settings = load_json(config.FILE_USER)
-            user_id = user_settings['userid']
+        # Active main loop and check all file and update
+        led("green", "all")
 
-            """system_info(user_id)
-            if check_update(user_id):
-                # Check all files config
+        # Check all files config
+        check_json(config.FILE_USER)
+        user_settings = load_json(config.FILE_USER)
+        user_id = user_settings['userid']
+
+        if user_settings['userid'] != 0:
+            # Chceck update and send system info
+            system_info(user_id)
+            check_update(user_id, "words")
+
+            if check_update(user_id, "user"):
+                # Load all file
                 check_json(config.FILE_WORDS)
                 words = load_json(config.FILE_WORDS)
                 user_settings = load_json(config.FILE_USER)
+                active = True
             else:
-                # Check all files config
+                # Load others file
                 check_json(config.FILE_WORDS)
                 words = load_json(config.FILE_WORDS)
-                active = True"""
+                active = True
 
-            check_json(config.FILE_WORDS)
-            words = load_json(config.FILE_WORDS)
-            active = True
         else:
-            user_settings = load_json(config.SETTINGS_FOLDER+'/'+config.FILE_USER_DEAFULT)
             # wymagaj połączenia z kontem
+            active = False
+            led("yellow", "all")
+
     else:
         # Stop main loop
         active = False
         # Ledy czerwone powiedz że nie ma połączenia
+        led("red", "all")
 
     # Main loop
     while active:
