@@ -21,8 +21,6 @@ LOG_FILE = 'logs.log'
 # File and folder name
 FILE_WORDS = "words.json"
 FILE_USER = "user.json"
-FILE_USER_DEAFULT = "deafult_user.json"
-SETTINGS_FOLDER = "Deafult"
 
 
 # Code to connect to account

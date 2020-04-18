@@ -21,3 +21,8 @@ TODO
     led słuchania - ring na zielono
     led błędu - ring na czerwono
     led braku pliku - ring na pomarańczowo
+
+led color
+    yellow brak połączenia z kontem
+    red brak połączenia z internetem
+    green wszystko okej trwa nasłuchiwanie

@@ -5,3 +5,129 @@
 2020-04-18 21:25:31,253 : INFO : main : system_info : Server connection valid
 2020-04-18 21:25:31,339 : INFO : main : check_json : The file exists and is valid - words.json
 2020-04-18 21:25:31,341 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:32:35,001 : INFO : main : <module> : Starting...
+2020-04-18 21:32:35,089 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:32:35,093 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:32:35,094 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:32:35,197 : INFO : main : system_info : Server connection valid
+2020-04-18 21:32:35,285 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:32:35,286 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:38:55,173 : INFO : main : <module> : Starting...
+2020-04-18 21:38:55,258 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:38:55,266 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:38:55,267 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:38:55,502 : INFO : main : system_info : Server connection valid
+2020-04-18 21:38:55,584 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:38:55,586 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:40:04,429 : INFO : main : <module> : Starting...
+2020-04-18 21:40:04,551 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:40:04,555 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:40:04,557 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:40:04,718 : INFO : main : system_info : Server connection valid
+2020-04-18 21:40:04,802 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:40:04,803 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:40:13,322 : INFO : main : <module> : Starting...
+2020-04-18 21:40:13,461 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:40:13,462 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:40:13,463 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:40:13,620 : INFO : main : system_info : Server connection valid
+2020-04-18 21:40:13,696 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:40:13,698 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:41:15,710 : INFO : main : <module> : Starting...
+2020-04-18 21:41:15,839 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:41:15,844 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:41:15,845 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:41:16,016 : INFO : main : system_info : Server connection valid
+2020-04-18 21:41:16,092 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:41:16,093 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:41:21,545 : INFO : main : <module> : Starting...
+2020-04-18 21:41:21,630 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:41:21,631 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:41:21,633 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:41:21,783 : INFO : main : system_info : Server connection valid
+2020-04-18 21:41:21,854 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:41:21,855 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:45:11,153 : INFO : main : <module> : Starting...
+2020-04-18 21:45:11,260 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:45:11,268 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:45:11,269 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:45:11,424 : INFO : main : system_info : Server connection valid
+2020-04-18 21:45:11,493 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:45:11,494 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:45:14,582 : INFO : main : <module> : Starting...
+2020-04-18 21:45:14,685 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:45:14,688 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:45:14,689 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:45:14,839 : INFO : main : system_info : Server connection valid
+2020-04-18 21:45:14,892 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:45:14,894 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:51:38,792 : INFO : main : <module> : Starting...
+2020-04-18 21:51:38,923 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:51:38,928 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:51:38,929 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:51:39,070 : INFO : main : system_info : Server connection valid
+2020-04-18 21:51:39,148 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:51:39,149 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:52:05,723 : INFO : main : <module> : Starting...
+2020-04-18 21:52:05,839 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:52:05,843 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:52:05,846 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:52:06,014 : INFO : main : system_info : Server connection valid
+2020-04-18 21:52:06,076 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:52:06,077 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:52:23,731 : INFO : main : <module> : Starting...
+2020-04-18 21:52:23,849 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:52:23,853 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:52:23,854 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:52:24,014 : INFO : main : system_info : Server connection valid
+2020-04-18 21:52:24,085 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:52:24,086 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:54:03,734 : INFO : main : <module> : Starting...
+2020-04-18 21:54:03,843 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:54:03,849 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:54:03,849 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:54:04,114 : INFO : main : system_info : Server connection valid
+2020-04-18 21:54:04,203 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:54:04,204 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:18,863 : INFO : main : <module> : Starting...
+2020-04-18 21:58:18,941 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:18,946 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:18,947 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:19,177 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:19,252 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:19,253 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:22,293 : INFO : main : <module> : Starting...
+2020-04-18 21:58:22,383 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:22,384 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:22,385 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:22,558 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:22,631 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:22,632 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:26,446 : INFO : main : <module> : Starting...
+2020-04-18 21:58:26,539 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:26,540 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:26,541 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:26,674 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:26,744 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:26,745 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:42,122 : INFO : main : <module> : Starting...
+2020-04-18 21:58:42,214 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:42,218 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:42,219 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:42,394 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:42,464 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:42,465 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:44,382 : INFO : main : <module> : Starting...
+2020-04-18 21:58:44,466 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:44,468 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:44,469 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:44,616 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:44,691 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:44,695 : INFO : main : load_json : File load successfully - words.json
+2020-04-18 21:58:47,109 : INFO : main : <module> : Starting...
+2020-04-18 21:58:47,182 : INFO : main : check_connection : Server connection valid
+2020-04-18 21:58:47,183 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 21:58:47,188 : INFO : main : load_json : File load successfully - user.json
+2020-04-18 21:58:47,334 : INFO : main : system_info : Server connection valid
+2020-04-18 21:58:47,401 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 21:58:47,403 : INFO : main : load_json : File load successfully - words.json

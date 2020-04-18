@@ -29,11 +29,11 @@ def check_connection():
 def check_update(userid, file):
     try:
         with urllib.request.urlopen(
-                config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=update&key=' + config.TOKEN_UPDATE) as response:
+                config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                print(res_encode)
+                # print(res_encode)
 
                 # Validation Status Code
                 if res_encode['Status'] == "OK":
@@ -43,7 +43,6 @@ def check_update(userid, file):
                     logging.info('Server connection not valid - ' + res_encode['Status'])
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
-        print(e.reason)
         status = False
 
     return False
@@ -58,35 +57,24 @@ def system_info(userid):
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                print(res_encode)
-
-                # Validation Status Code
-                if res_encode['Status'] == "OK":
-                    logging.info('Server connection valid')
-                else:
-                    logging.info('Server connection not valid - ' + res_encode['Status'])
+                logging.info('Debug data sent')
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
-        print(e.reason)
 
 
 # Add word to database to machine learning
 def add_word(text, actionid, action):
     text = short(text, 'all')
     try:
-        with urllib.request.urlopen(
-                config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=waadd&key=' + config.TOKEN_ADD_WORD + '&Word=' + text + '&ACNU=' + str(
-                    actionid) + '&Action=' + action) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text+'&ACNU='+str(actionid)+'&Action='+action) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                print(res_encode)
-                logging.info('Word added to database successfully')
+                logging.info('Word added to database successfully - '+text)
 
             status = True
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
-        print(e.reason)
         status = False
 
     return status
@@ -102,12 +90,10 @@ def led(color, anim):
 def check_json(file_js):
     try:
         with open(file_js) as f:
-            print("The file exists and is valid - " + file_js)
             logging.info("The file exists and is valid - " + file_js)
 
             state = True
     except IOError:
-        print("File not accessible - " + file_js)
         logging.info("File not accessible - " + file_js)
 
         state = False
@@ -293,6 +279,7 @@ if __name__ == "__main__":
         # Ledy czerwone powiedz że nie ma połączenia
         led("red", "all")
 
+    led("black", "all")
     # Main loop
     while active:
         # Wait for a user speech
