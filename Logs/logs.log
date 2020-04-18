@@ -390,3 +390,13 @@
 2020-04-18 01:54:53,391 : INFO : main : load_json : File load successfully
 2020-04-18 01:54:53,398 : INFO : main : check_json : The file exists and is valid - user.json
 2020-04-18 01:54:53,399 : INFO : main : load_json : File load successfully
+2020-04-18 02:05:32,073 : INFO : main : <module> : Starting...
+2020-04-18 02:05:32,076 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 02:05:32,077 : INFO : main : load_json : File load successfully
+2020-04-18 02:05:32,083 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 02:05:32,085 : INFO : main : load_json : File load successfully
+2020-04-18 02:06:27,060 : INFO : main : <module> : Starting...
+2020-04-18 02:06:27,062 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 02:06:27,063 : INFO : main : load_json : File load successfully
+2020-04-18 02:06:27,066 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 02:06:27,067 : INFO : main : load_json : File load successfully

@@ -6,19 +6,27 @@ import pyttsx3
 import speech_recognition as sr
 import Resources.config as config
 import Resources.function as function
+import platform
+
+print(platform.machine())
+print(platform.version())
+print(platform.platform())
+print(platform.uname())
+print(platform.system())
+print(platform.processor())
 
 
 # Check config file before init
 def check_json(file_js, choice, create):
     try:
         with open(file_js) as f:
-            print("The file exists and is valid - "+file_js)
-            logging.info("The file exists and is valid - "+file_js)
+            print("The file exists and is valid - " + file_js)
+            logging.info("The file exists and is valid - " + file_js)
 
             state = True
     except IOError:
-        print("File not accessible - "+file_js)
-        logging.info("File not accessible - "+file_js)
+        print("File not accessible - " + file_js)
+        logging.info("File not accessible - " + file_js)
 
         if create:
             f = open(file_js, "a")
@@ -98,10 +106,8 @@ def recognize_speech_from_mic(recognizer, microphone):
 
     response = {
         "state": None,
-        "success": True,
         "transcription": None
     }
-
 
     '''
     state = ok jezeli przetłumaczono słowa
@@ -115,11 +121,9 @@ def recognize_speech_from_mic(recognizer, microphone):
     except sr.RequestError:
         # API was unreachable or unresponsive
         response["state"] = "API"
-        response["success"] = False
     except sr.UnknownValueError:
         # speech was unintelligible
         response["state"] = "Unable_Recognize"
-        response["success"] = False
     return response
 
 
@@ -156,7 +160,7 @@ def active_agent():
     print(user_word)
 
     # If speech is recognize corectly
-    if user_word['success']:
+    if user_word['state'] == "OK":
         recognize_word = user_word['transcription'].lower()
         logging.info("Command registered on active bot - " + recognize_word)
 
@@ -211,7 +215,8 @@ if __name__ == "__main__":
     tts_engine = pyttsx3.init()
 
     # Logging init
-    logging.basicConfig(format=config.LOG_FORMAT, filename=config.LOG_FOLDER+'/'+config.LOG_FILE, level=config.LOG_LEVEL)
+    logging.basicConfig(format=config.LOG_FORMAT, filename=config.LOG_FOLDER + '/' + config.LOG_FILE,
+                        level=config.LOG_LEVEL)
     logging.info("Starting...")
 
     # Check all files config
@@ -222,7 +227,7 @@ if __name__ == "__main__":
     if user_sett_state:
         user_settings = load_json(config.FILE_NAME_USER)
     else:
-        user_settings = load_json(config.SETTINGS_FOLDER+'/'+config.FILE_NAME_USER_DEAFULT)
+        user_settings = load_json(config.SETTINGS_FOLDER + '/' + config.FILE_NAME_USER_DEAFULT)
 
     # Main loop
     while True:
