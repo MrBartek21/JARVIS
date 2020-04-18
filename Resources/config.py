@@ -2,9 +2,14 @@ import logging
 
 OWNER = "MrBartek21"
 DESCRIPTION = '''NSG Studio Bot'''
+
+# Token to API
 TOKEN_ADD_WORD = 'f9L7Gg9elNpSjKJnUG8p'
 TOKEN_WEATHER = '4NFoW3yvFxsrkzlfS7sE'
+TOKEN_STATUS = 'eCGHfy3dBxFrQQbt3KkQ'
+TOKEN_UPDATE = '1aCluDKZcoWSu7jjpi9J'
 
+# Link to main server
 HEADURL = 'http'
 IP = '192.168.1.10'
 
@@ -17,8 +22,8 @@ LOG_FILE = 'logs.log'
 # ACTIVATOR = "alexa"
 # RESPONSE = "Słucham"
 
-FILE_NAME_WORDS = "words.json"
-FILE_NAME_USER = "user.json"
-FILE_NAME_USER_DEAFULT = "deafult_user.json"
+FILE_WORDS = "words.json"
+FILE_USER = "user.json"
+FILE_USER_DEAFULT = "deafult_user.json"
 
 SETTINGS_FOLDER = "Deafult"

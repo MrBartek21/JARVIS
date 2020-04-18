@@ -400,3 +400,27 @@
 2020-04-18 02:06:27,063 : INFO : main : load_json : File load successfully
 2020-04-18 02:06:27,066 : INFO : main : check_json : The file exists and is valid - user.json
 2020-04-18 02:06:27,067 : INFO : main : load_json : File load successfully
+2020-04-18 20:21:48,183 : INFO : main : <module> : Starting...
+2020-04-18 20:21:48,247 : WARNING : main : check_connection : Internal Server Error
+2020-04-18 20:22:23,880 : INFO : main : <module> : Starting...
+2020-04-18 20:22:23,906 : WARNING : main : check_connection : Internal Server Error
+2020-04-18 20:25:10,769 : INFO : main : <module> : Starting...
+2020-04-18 20:25:10,895 : INFO : main : check_connection : Server connection valid
+2020-04-18 20:25:10,904 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 20:25:10,905 : INFO : main : load_json : File load successfully
+2020-04-18 20:26:18,608 : INFO : main : <module> : Starting...
+2020-04-18 20:26:18,694 : INFO : main : check_connection : Server connection valid
+2020-04-18 20:26:18,702 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 20:26:18,703 : INFO : main : load_json : File load successfully
+2020-04-18 20:26:26,536 : INFO : main : <module> : Starting...
+2020-04-18 20:26:26,633 : INFO : main : check_connection : Server connection valid
+2020-04-18 20:26:26,642 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-18 20:26:26,644 : INFO : main : load_json : File load successfully
+2020-04-18 20:26:26,656 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-18 20:26:26,659 : INFO : main : load_json : File load successfully
+2020-04-18 20:26:35,789 : INFO : main : <module> : Command registered - alexa
+2020-04-18 20:26:35,946 : INFO : main : add_word : Word added to database successfully
+2020-04-18 20:27:00,178 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-18 20:27:00,180 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-18 20:27:01,779 : INFO : main : add_word : Word added to database successfully
+2020-04-18 20:27:01,780 : INFO : function : shutdown : Shutting down...
