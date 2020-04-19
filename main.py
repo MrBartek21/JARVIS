@@ -7,6 +7,7 @@ import speech_recognition as sr
 import Resources.config as config
 import Resources.function as function
 import platform
+import os
 
 
 # Check connection
@@ -26,26 +27,32 @@ def check_connection():
 
 
 # Check update
-def check_update(userid, file):
+def check_update(user_id, file, version):
     try:
-        with urllib.request.urlopen(
-                config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP +'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE+'&UserID='+str(user_id)+'&File='+file+'&Version='+str(version)) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                # print(res_encode)
 
                 # Validation Status Code
-                if res_encode['Status'] == "OK":
-                    pass
+                if res_encode['Status'] == "Update":
+                    update_content = res_encode['Update']
+                    new_version = update_content['version']
+                    os.remove(file)
+                    file = open(file, 'w')
+                    file.write(update_content)
+                    file.close()
+
+                    logging.info("Updating - "+file+' from version '+version+' to '+new_version)
+                    status = True
                 else:
+                    logging.info("No updates available - "+file)
                     status = False
-                    logging.info('Server connection not valid - ' + res_encode['Status'])
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
         status = False
 
-    return False
+    return status
 
 
 # Get system info
@@ -53,7 +60,7 @@ def system_info(userid):
     sys_info = {'machine': platform.machine(), 'version': platform.version(), 'system': platform.system()}
 
     try:
-        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS+'&add=Yes&UserID='+userid+'&Code='+config.CODE+'&machine='+sys_info['machine']+'&version='+sys_info['version']+'&system='+sys_info['system']) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS+'&add=Yes&UserID='+str(userid)+'&Code='+str(config.CODE)+'&machine='+sys_info['machine']+'&version='+sys_info['version']+'&system='+sys_info['system']) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
@@ -64,9 +71,9 @@ def system_info(userid):
 
 # Add word to database to machine learning
 def add_word(text, actionid, action):
-    text = short(text, 'all')
+    text_short = short(text, 'all')
     try:
-        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text+'&ACNU='+str(actionid)+'&Action='+action) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text_short+'&ACNU='+str(actionid)+'&Action='+action) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
@@ -230,7 +237,7 @@ def active_agent():
 # Main function
 if __name__ == "__main__":
     active = False
-    # Microfon and Recognizer init
+    # Microphone and Recognizer init
     recognizer = sr.Recognizer()
     microphone = sr.Microphone()
 
@@ -241,31 +248,34 @@ if __name__ == "__main__":
     logging.basicConfig(format=config.LOG_FORMAT, filename=config.LOG_FOLDER + '/' + config.LOG_FILE, level=config.LOG_LEVEL)
     logging.info("Starting...")
 
+    # Check all file
+    check_json(config.FILE_WORDS)
+    check_json(config.FILE_USER)
+
     # Check connection init
     if check_connection():
         # Active main loop and check all file and update
         led("green", "all")
 
-        # Check all files config
-        check_json(config.FILE_USER)
+        # Loads all file
+        words = load_json(config.FILE_WORDS)
+        version_words = words['version']
         user_settings = load_json(config.FILE_USER)
         user_id = user_settings['userid']
+        version_user_settings = user_settings['version']
 
-        if user_settings['userid'] != 0:
-            # Chceck update and send system info
+        if user_id != 0:
+            # Check update and send system info
             system_info(user_id)
-            check_update(user_id, "words")
+            check_update(user_id, config.FILE_WORDS, version_words)
 
-            if check_update(user_id, "user"):
+            if check_update(user_id, config.FILE_USER, version_user_settings):
                 # Load all file
-                check_json(config.FILE_WORDS)
                 words = load_json(config.FILE_WORDS)
                 user_settings = load_json(config.FILE_USER)
                 active = True
             else:
                 # Load others file
-                check_json(config.FILE_WORDS)
-                words = load_json(config.FILE_WORDS)
                 active = True
 
         else:

@@ -6,7 +6,7 @@ OWNER = "MrBartek21"
 TOKEN_ADD_WORD = 'f9L7Gg9elNpSjKJnUG8p'
 TOKEN_WEATHER = '4NFoW3yvFxsrkzlfS7sE'
 TOKEN_STATUS = 'eCGHfy3dBxFrQQbt3KkQ'
-TOKEN_UPDATE = '1aCluDKZcoWSu7jjpi9J'
+TOKEN_UPDATE = 'tDoN9DKZcoWSu7jjpi9J'
 
 # Link to main server
 HEADURL = 'http'

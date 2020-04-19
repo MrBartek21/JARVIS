@@ -131,3 +131,168 @@
 2020-04-18 21:58:47,334 : INFO : main : system_info : Server connection valid
 2020-04-18 21:58:47,401 : INFO : main : check_json : The file exists and is valid - words.json
 2020-04-18 21:58:47,403 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:09:24,948 : INFO : main : <module> : Starting...
+2020-04-19 01:09:25,095 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:09:25,105 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:09:25,106 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:09:25,267 : INFO : main : system_info : Debug data sent
+2020-04-19 01:09:25,380 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:09:25,384 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:09:31,297 : INFO : main : <module> : Command registered - alexa
+2020-04-19 01:09:31,509 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 01:09:37,519 : INFO : main : active_agent : Command registered on active bot - restart
+2020-04-19 01:09:37,520 : INFO : main : active_agent : ACTION 1 - restart
+2020-04-19 01:09:39,218 : INFO : main : add_word : Word added to database successfully - restart
+2020-04-19 01:09:39,744 : INFO : main : <module> : Starting...
+2020-04-19 01:09:39,826 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:09:39,830 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:09:39,831 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:09:39,979 : INFO : main : system_info : Debug data sent
+2020-04-19 01:09:40,065 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:09:40,067 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:09:45,648 : INFO : main : <module> : Command registered - alexa
+2020-04-19 01:09:45,776 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 01:09:50,904 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-19 01:09:50,904 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-19 01:09:51,224 : INFO : function : weather : Getting weather...
+2020-04-19 01:09:51,225 : INFO : function : weather : Temperatura: 5.51 stopni Celsjusza, ciœnienie: 987 hektopaskali
+2020-04-19 01:10:02,310 : INFO : main : <module> : Command registered - alexa
+2020-04-19 01:10:02,419 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 01:10:15,162 : INFO : main : <module> : Command registered - alexa
+2020-04-19 01:10:15,335 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 01:10:20,420 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-19 01:10:20,420 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-19 01:10:21,992 : INFO : main : add_word : Word added to database successfully - wylacz%20sie
+2020-04-19 01:10:21,993 : INFO : function : shutdown : Shutting down...
+2020-04-19 01:10:22,027 : INFO : function : restart : Restarting...
+2020-04-19 01:31:28,259 : INFO : main : <module> : Starting...
+2020-04-19 01:31:28,389 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:31:28,397 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:31:28,398 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:31:28,599 : INFO : main : system_info : Debug data sent
+2020-04-19 01:34:30,904 : INFO : main : <module> : Starting...
+2020-04-19 01:34:30,909 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:34:30,916 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:34:31,009 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:34:31,010 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:34:31,011 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:34:31,189 : INFO : main : system_info : Debug data sent
+2020-04-19 01:35:15,738 : INFO : main : <module> : Starting...
+2020-04-19 01:35:15,741 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:35:15,745 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:35:16,055 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:35:16,056 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:35:16,057 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:35:16,354 : INFO : main : system_info : Debug data sent
+2020-04-19 01:36:27,830 : INFO : main : <module> : Starting...
+2020-04-19 01:36:27,834 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:36:27,837 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:36:28,207 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:36:28,208 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:36:28,209 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:36:28,324 : INFO : main : system_info : Debug data sent
+2020-04-19 01:36:28,346 : INFO : main : check_update : {'Code': 5, 'Description': 'ERROR KEY DATABASE'}
+2020-04-19 01:38:07,107 : INFO : main : <module> : Starting...
+2020-04-19 01:38:07,110 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:38:07,115 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:38:07,253 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:38:07,255 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:38:07,256 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:38:07,443 : INFO : main : system_info : Debug data sent
+2020-04-19 01:38:07,472 : INFO : main : check_update : {'Code': 5, 'Description': 'ERROR KEY DATABASE'}
+2020-04-19 01:39:05,428 : INFO : main : <module> : Starting...
+2020-04-19 01:39:05,432 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:39:05,435 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:39:05,514 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:39:05,516 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:39:05,517 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:39:05,689 : INFO : main : system_info : Debug data sent
+2020-04-19 01:39:05,766 : INFO : main : check_update : {'Code': 0, 'Description': 'OK', 'Status': 'Update'}
+2020-04-19 01:43:13,919 : INFO : main : <module> : Starting...
+2020-04-19 01:43:13,928 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:43:13,931 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:43:14,042 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:43:14,043 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:43:14,044 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:43:34,985 : INFO : main : <module> : Starting...
+2020-04-19 01:43:34,995 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:43:34,999 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:43:35,083 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:43:35,085 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:43:35,086 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:50:06,021 : INFO : main : <module> : Starting...
+2020-04-19 01:50:06,027 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:50:06,035 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:50:06,145 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:50:06,147 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:50:06,148 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:50:54,409 : INFO : main : <module> : Starting...
+2020-04-19 01:50:54,413 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:50:54,415 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:50:54,511 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:50:54,512 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:50:54,513 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:50:54,765 : INFO : main : system_info : Debug data sent
+2020-04-19 01:51:15,477 : INFO : main : <module> : Starting...
+2020-04-19 01:51:15,480 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 01:51:15,483 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 01:51:15,585 : INFO : main : check_connection : Server connection valid
+2020-04-19 01:51:15,586 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 01:51:15,587 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 01:51:15,763 : INFO : main : system_info : Debug data sent
+2020-04-19 01:51:15,835 : INFO : main : check_update : {'Code': 0, 'Description': 'OK', 'Status': 'Update', 'Words': '{"count": 3, "word1": {"name": "wy³¹cz siê", "action": "shutdown", "actionid": 1, "response": "Wy³¹czam siê"}, "word2": {"name": "restart", "action": "restart", "actionid": 1, "response": "Trwa restart..."}, "word3": {"name": "pogoda", "action": "weather", "actionid": 2, "response": ""}, "version": 0}'}
+2020-04-19 01:51:15,935 : INFO : main : check_update : {'Code': 0, 'Description': 'OK', 'Status': 'None'}
+2020-04-19 02:06:57,739 : INFO : main : <module> : Starting...
+2020-04-19 02:06:57,747 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 02:06:57,751 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 02:06:59,223 : INFO : main : check_connection : Server connection valid
+2020-04-19 02:06:59,225 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 02:06:59,226 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 02:06:59,345 : INFO : main : system_info : Debug data sent
+2020-04-19 02:06:59,420 : INFO : main : check_update : Updating - words.json
+2020-04-19 02:06:59,530 : INFO : main : check_update : No updates available - user.json
+2020-04-19 02:08:10,794 : INFO : main : <module> : Starting...
+2020-04-19 02:08:10,797 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 02:08:10,800 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 02:08:10,921 : INFO : main : check_connection : Server connection valid
+2020-04-19 02:08:10,922 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 02:08:10,923 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 02:08:11,064 : INFO : main : system_info : Debug data sent
+2020-04-19 02:08:11,256 : INFO : main : check_update : Updating - words.json
+2020-04-19 02:08:11,370 : INFO : main : check_update : No updates available - user.json
+2020-04-19 02:08:15,161 : INFO : main : <module> : Command registered - alexa
+2020-04-19 02:08:15,309 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 02:08:21,289 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-19 02:08:21,290 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-19 02:08:23,011 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
+2020-04-19 02:08:23,013 : INFO : function : shutdown : Shutting down...
+2020-04-19 02:09:18,879 : INFO : main : <module> : Starting...
+2020-04-19 02:09:18,883 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 02:09:18,886 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 02:09:18,989 : INFO : main : check_connection : Server connection valid
+2020-04-19 02:09:19,009 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 02:09:19,017 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 02:09:19,258 : INFO : main : system_info : Debug data sent
+2020-04-19 02:09:19,333 : INFO : main : check_update : Updating - words.json
+2020-04-19 02:09:19,418 : INFO : main : check_update : No updates available - user.json
+2020-04-19 02:09:23,681 : INFO : main : <module> : Command registered - alexa
+2020-04-19 02:09:23,821 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 02:09:28,690 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-19 02:09:28,690 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-19 02:09:30,256 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
+2020-04-19 02:09:30,258 : INFO : function : shutdown : Shutting down...
+2020-04-19 02:09:33,200 : INFO : main : <module> : Starting...
+2020-04-19 02:09:33,201 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 02:09:33,205 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 02:09:33,294 : INFO : main : check_connection : Server connection valid
+2020-04-19 02:09:33,295 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 02:09:33,296 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 02:09:33,465 : INFO : main : system_info : Debug data sent
+2020-04-19 02:09:33,561 : INFO : main : check_update : No updates available - words.json
+2020-04-19 02:09:33,670 : INFO : main : check_update : No updates available - user.json
+2020-04-19 02:09:39,312 : INFO : main : <module> : Command registered - alexa
+2020-04-19 02:09:39,430 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 02:09:47,260 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-19 02:09:47,261 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-19 02:09:48,830 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
+2020-04-19 02:09:48,830 : INFO : function : shutdown : Shutting down...
