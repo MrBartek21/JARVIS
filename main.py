@@ -8,6 +8,7 @@ import Resources.config as config
 import Resources.function as function
 import platform
 import os
+import time
 
 
 # Check connection
@@ -181,7 +182,7 @@ def recognize_speech_from_mic(recognizer, microphone):
 
 
 def active_agent():
-    tts_engine.say(user_settings['response'])
+    tts_engine.say(config.RESPONSE)
     tts_engine.runAndWait()
 
     # Wait for a user speech
@@ -229,7 +230,7 @@ def active_agent():
                     tts_engine.say(word_find['response'] + result['weather'])
                     tts_engine.runAndWait()
         else:
-            tts_engine.say(user_settings['no_response'])
+            tts_engine.say(config.NO_RESPONSE)
             tts_engine.runAndWait()
             state_aw = add_word(recognize_word, -1, 'ERROR')
 
@@ -277,7 +278,6 @@ if __name__ == "__main__":
             else:
                 # Load others file
                 active = True
-
         else:
             # wymagaj połączenia z kontem
             active = False
@@ -289,7 +289,9 @@ if __name__ == "__main__":
         # Ledy czerwone powiedz że nie ma połączenia
         led("red", "all")
 
-    led("black", "all")
+    time.sleep(5)
+    if active:
+        led("black", "all")
     # Main loop
     while active:
         # Wait for a user speech
@@ -307,5 +309,5 @@ if __name__ == "__main__":
         elif user_word['state'] == "API":
             # Unable to connect to server recognize
             logging.info("Unable to connect to server, restart wymagany")
-            tts_engine.say(user_settings['no_connection'])
+            tts_engine.say(config.NO_CONNECTION)
             tts_engine.runAndWait()

@@ -296,3 +296,24 @@
 2020-04-19 02:09:47,261 : INFO : main : active_agent : ACTION 1 - shutdown
 2020-04-19 02:09:48,830 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
 2020-04-19 02:09:48,830 : INFO : function : shutdown : Shutting down...
+2020-04-19 02:21:14,145 : INFO : main : <module> : Starting...
+2020-04-19 02:21:14,150 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 02:21:14,154 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 02:21:14,251 : INFO : main : check_connection : Server connection valid
+2020-04-19 02:21:14,252 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 02:21:14,253 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 02:21:14,410 : INFO : main : system_info : Debug data sent
+2020-04-19 02:21:14,577 : INFO : main : check_update : No updates available - words.json
+2020-04-19 02:21:14,666 : INFO : main : check_update : No updates available - user.json
+2020-04-19 02:21:20,605 : INFO : main : <module> : Command registered - alexa
+2020-04-19 02:21:20,728 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 02:21:26,418 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-19 02:21:26,419 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-19 02:21:26,728 : INFO : function : weather : Getting weather...
+2020-04-19 02:21:26,728 : INFO : function : weather : Temperatura: 5.0 stopni Celsjusza, ciœnienie: 1017 hektopaskali
+2020-04-19 02:23:57,411 : INFO : main : <module> : Command registered - alexa
+2020-04-19 02:23:57,623 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-19 02:24:03,564 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-19 02:24:03,564 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-19 02:24:05,119 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
+2020-04-19 02:24:05,121 : INFO : function : shutdown : Shutting down...

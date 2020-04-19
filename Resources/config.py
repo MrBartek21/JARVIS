@@ -25,3 +25,9 @@ FILE_USER = "user.json"
 
 # Code to connect to account
 CODE = "8520"
+
+
+#SPEECH
+NO_CONNECTION = "Nie mogę połączyć się z internetem, zrestartuj urządzenie"
+NO_RESPONSE = "Przepraszam nie rozumiem"
+RESPONSE = "Slucham"
