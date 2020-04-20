@@ -317,3 +317,60 @@
 2020-04-19 02:24:03,564 : INFO : main : active_agent : ACTION 1 - shutdown
 2020-04-19 02:24:05,119 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
 2020-04-19 02:24:05,121 : INFO : function : shutdown : Shutting down...
+2020-04-19 16:11:06,891 : INFO : main : <module> : Starting...
+2020-04-19 16:11:06,899 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-19 16:11:06,907 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-19 16:11:07,322 : INFO : main : check_connection : Server connection valid
+2020-04-19 16:11:07,323 : INFO : main : load_json : File load successfully - words.json
+2020-04-19 16:11:07,325 : INFO : main : load_json : File load successfully - user.json
+2020-04-19 16:11:07,460 : INFO : main : system_info : Debug data sent
+2020-04-19 16:11:07,533 : INFO : main : check_update : No updates available - words.json
+2020-04-19 16:11:07,601 : INFO : main : check_update : No updates available - user.json
+2020-04-19 16:12:32,096 : INFO : main : <module> : Command registered - jedzenia
+2020-04-19 16:12:32,231 : INFO : main : add_word : Word added to database successfully - jedzenia
+2020-04-19 16:13:53,602 : INFO : main : <module> : Command registered - bardzo wam dziêkujê za wspóln¹ akcje po 4 z³
+2020-04-19 16:13:53,785 : INFO : main : add_word : Word added to database successfully - bardzo wam dziêkujê za wspóln¹ akcje po 4 z³
+2020-04-19 16:17:05,309 : INFO : main : <module> : Command registered - wyrównania sytuacji naleœnikami
+2020-04-19 16:17:05,491 : INFO : main : add_word : Word added to database successfully - wyrównania sytuacji naleœnikami
+2020-04-19 16:17:35,971 : INFO : main : <module> : Command registered - wys³a³em g³os
+2020-04-19 16:17:36,139 : INFO : main : add_word : Word added to database successfully - wys³a³em g³os
+2020-04-19 16:17:46,274 : INFO : main : <module> : Command registered - niebiescy.pl
+2020-04-19 16:17:46,426 : INFO : main : add_word : Word added to database successfully - niebiescy.pl
+2020-04-19 16:20:23,316 : INFO : main : <module> : Command registered - ramiona 800 z³ do 40000 z³ w tym momencie 22 godziny 45 minut zosta³o nam jeszcze godzinê 15 minut damy radê
+2020-04-19 16:20:23,471 : INFO : main : add_word : Word added to database successfully - ramiona 800 z³ do 40000 z³ w tym momencie 22 godziny 45 minut zosta³o nam jeszcze godzinê 15 minut damy radê
+2020-04-19 16:21:46,892 : INFO : main : <module> : Command registered - mia³am siê uczyæ na kolosa
+2020-04-19 16:21:47,031 : INFO : main : add_word : Word added to database successfully - mia³am siê uczyæ na kolosa
+2020-04-19 16:23:50,990 : INFO : main : <module> : Command registered - 594 z³ i 86 gr i wygra³em 140000 z³ no dobra to jeszcze 70 minut dam radê
+2020-04-19 16:23:51,126 : INFO : main : add_word : Word added to database successfully - 594 z³ i 86 gr i wygra³em 140000 z³ no dobra to jeszcze 70 minut dam radê
+2020-04-19 16:31:17,511 : INFO : main : <module> : Command registered - 19 z³ a¿ tak ponad gdzie jest gdzie jest mój w³aœnie 20 z³ dobra jeszcze nie mówiê ¿e jesteœ
+2020-04-19 16:31:17,714 : INFO : main : add_word : Word added to database successfully - 19 z³ a¿ tak ponad gdzie jest gdzie jest mój w³aœnie 20 z³ dobra jeszcze nie mówiê ¿e jesteœ
+2020-04-19 16:34:25,993 : INFO : main : <module> : Command registered - nieca³e 20 z³ i godzina i damy radê 140 000 z³ na siepomaga
+2020-04-19 16:34:26,151 : INFO : main : add_word : Word added to database successfully - nieca³e 20 z³ i godzina i damy radê 140 000 z³ na siepomaga
+2020-04-19 16:34:52,003 : INFO : main : <module> : Command registered - 140 z³ ten jesteœcie fantastyczni
+2020-04-19 16:34:52,149 : INFO : main : add_word : Word added to database successfully - 140 z³ ten jesteœcie fantastyczni
+2020-04-19 16:36:08,799 : INFO : main : <module> : Command registered - na p³ytce jak mo¿ecie nie chcesz nawet
+2020-04-19 16:36:08,956 : INFO : main : add_word : Word added to database successfully - na p³ytce jak mo¿ecie nie chcesz nawet
+2020-04-19 16:36:41,859 : INFO : main : <module> : Command registered - nawet
+2020-04-19 16:36:42,043 : INFO : main : add_word : Word added to database successfully - nawet
+2020-04-19 16:39:39,729 : INFO : main : <module> : Command registered - nie kurwa
+2020-04-19 16:39:39,865 : INFO : main : add_word : Word added to database successfully - nie kurwa
+2020-04-19 16:40:51,982 : INFO : main : <module> : Command registered - nawigacja
+2020-04-19 16:40:52,130 : INFO : main : add_word : Word added to database successfully - nawigacja
+2020-04-19 16:41:00,073 : INFO : main : <module> : Command registered - s³omy
+2020-04-19 16:41:00,218 : INFO : main : add_word : Word added to database successfully - s³omy
+2020-04-19 16:41:56,593 : INFO : main : <module> : Command registered - kochanie czy ty wiesz jeœli tak wyœlij sms
+2020-04-19 16:41:56,745 : INFO : main : add_word : Word added to database successfully - kochanie czy ty wiesz jeœli tak wyœlij sms
+2020-04-19 16:44:10,391 : INFO : main : <module> : Command registered - stó³ z powy³amywanymi chyba mi w³aœnie wysz³a i siê pokazuje patrz ciebie kurwa trzeba odcinek
+2020-04-19 16:44:10,532 : INFO : main : add_word : Word added to database successfully - stó³ z powy³amywanymi chyba mi w³aœnie wysz³a i siê pokazuje patrz ciebie kurwa trzeba odcinek
+2020-04-19 16:48:14,389 : INFO : main : <module> : Command registered - kasia kubat
+2020-04-19 16:48:14,572 : INFO : main : add_word : Word added to database successfully - kasia kubat
+2020-04-19 16:48:35,748 : INFO : main : <module> : Command registered - snajper
+2020-04-19 16:48:35,869 : INFO : main : add_word : Word added to database successfully - snajper
+2020-04-19 16:51:19,960 : INFO : main : <module> : Command registered - nie mogê pomagaæ 20 z³ to teraz u¿ywany kebaba jestem ziemniakiem 20 z³ wspania³a inicjatywa jest gratulacje #
+2020-04-19 16:51:20,081 : INFO : main : add_word : Word added to database successfully - nie mogê pomagaæ 20 z³ to teraz u¿ywany kebaba jestem ziemniakiem 20 z³ wspania³a inicjatywa jest gratulacje #
+2020-04-19 16:52:11,295 : INFO : main : <module> : Command registered - 3:46 najlepsze
+2020-04-19 16:52:11,565 : INFO : main : add_word : Word added to database successfully - 3:46 najlepsze
+2020-04-19 16:52:47,775 : INFO : main : <module> : Command registered - taki kebab jak wracacie rano na chodniku po imprezie
+2020-04-19 16:52:47,915 : INFO : main : add_word : Word added to database successfully - taki kebab jak wracacie rano na chodniku po imprezie
+2020-04-19 16:53:05,027 : INFO : main : <module> : Command registered - jaki skomponowane s¹ z ty³u pawlak normalnie ¿e wiêc
+2020-04-19 16:53:05,166 : INFO : main : add_word : Word added to database successfully - jaki skomponowane s¹ z ty³u pawlak normalnie ¿e wiêc
