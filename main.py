@@ -191,6 +191,7 @@ def recognize_speech_from_mic(recognizer, microphone, lang):
     except sr.UnknownValueError:
         # speech was unintelligible
         response["state"] = "Unable_Recognize"
+    print(response)
     return response
 
 
@@ -200,7 +201,6 @@ def active_agent(lang):
 
     # Wait for a user speech
     user_word_agent = recognize_speech_from_mic(recognizer, microphone, lang)
-    print(user_word_agent)
 
     # If speech is recognize corectly
     if user_word_agent['state'] == "OK":
@@ -317,7 +317,6 @@ if __name__ == "__main__":
     while active:
         # Wait for a user speech
         user_word = recognize_speech_from_mic(recognizer, microphone, user_settings['lang'])
-        print(user_word)
 
         # If speech is recognize correctly
         if user_word['state'] == "OK":
