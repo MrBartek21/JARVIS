@@ -1,4 +1,5 @@
 import logging
+from datetime import datetime
 
 OWNER = "MrBartek21"
 
@@ -16,7 +17,9 @@ IP = '192.168.1.10'
 LOG_FORMAT = "%(asctime)s : %(levelname)s : %(module)s : %(funcName)s : %(message)s"
 LOG_LEVEL = logging.INFO
 LOG_FOLDER = 'Logs'
-LOG_FILE = 'logs.log'
+LOG_FILENAME = 'logs.log'
+LOG_FILE = datetime.now().strftime('%Y-%m-%d_%H-%M_'+LOG_FILENAME)
+print(LOG_FILE)
 
 # File and folder name
 FILE_WORDS = "words.json"
