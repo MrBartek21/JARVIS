@@ -217,6 +217,7 @@ def active_agent(settings):
     tts_engine.say(config.RESPONSE)
     tts_engine.runAndWait()
     active_status(settings['userid'], config.CODE)
+    led('blue', 'ring')
 
     # Wait for a user speech
     user_word_agent = recognize_speech_from_mic(recognizer, microphone, settings['lang'])
@@ -280,6 +281,7 @@ def active_agent(settings):
         tts_engine.say(config.API_ERROR)
         tts_engine.runAndWait()
         led("red", "ring")
+    led('black', 'ring')
 
 
 # Main function
