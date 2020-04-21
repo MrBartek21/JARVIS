@@ -20,6 +20,9 @@ def check_connection():
             if res_encode['Code'] == 0:
                 status = True
                 logging.info('Server connection valid')
+            else:
+                status = True
+                logging.info('Server connection not valid - '+res_encode['Code']+' '+res_encode['Description'])
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
         status = False
@@ -29,26 +32,36 @@ def check_connection():
 
 # Check update
 def check_update(user_id, file, version):
+    version = str(version)
+    user_id = str(user_id)
+
     try:
-        with urllib.request.urlopen(config.HEADURL+'://'+config.IP +'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE+'&UserID='+str(user_id)+'&File='+file+'&Version='+str(version)) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP +'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE+'&UserID='+user_id+'&File='+file+'&Version='+version) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
 
                 # Validation Status Code
                 if res_encode['Status'] == "Update":
+                    # Load all string to var
                     update_content = res_encode['Update']
-                    new_version = update_content['version']
+                    # Convert string to json
+                    content = json.loads(update_content)
+                    new_version = str(content['version'])
                     os.remove(file)
                     file = open(file, 'w')
-                    file.write(update_content)
+                    # Convert json to string
+                    file.write(json.dumps(content))
                     file.close()
 
-                    logging.info("Updating - "+file+' from version '+version+' to '+new_version)
+                    logging.info("Updating - "+str(file)+' from version '+version+' to '+new_version)
                     status = True
                 else:
                     logging.info("No updates available - "+file)
                     status = False
+            else:
+                logging.info('No updates available - ' + res_encode['Code'] + ' ' + res_encode['Description'])
+                status = False
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
         status = False
