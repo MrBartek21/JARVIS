@@ -23,8 +23,9 @@ def restart():
 # Weather
 def weather():
     state = dict();
+    user_settings = m.load_json(config.FILE_USER)
     try:
-        with urllib.request.urlopen(config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=weather&key='+config.TOKEN_WEATHER) as response:
+        with urllib.request.urlopen(config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=weather&key='+config.TOKEN_WEATHER+'&UserID='+str(user_settings['userid'])) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:

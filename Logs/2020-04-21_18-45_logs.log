@@ -1,0 +1,30 @@
+2020-04-21 18:45:16,731 : INFO : main : <module> : Starting...
+2020-04-21 18:45:16,735 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 18:45:16,735 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 18:45:16,855 : INFO : main : check_connection : Server connection valid
+2020-04-21 18:45:16,860 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 18:45:16,861 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 18:45:17,002 : INFO : main : system_info : Debug data sent
+2020-04-21 18:45:17,110 : INFO : main : check_update : No updates available - words.json
+2020-04-21 18:45:17,227 : INFO : main : check_update : No updates available - user.json
+2020-04-21 18:45:37,411 : INFO : main : <module> : Command registered - alexa areka
+2020-04-21 18:45:37,551 : INFO : main : add_word : Word added to database successfully - alexa areka
+2020-04-21 18:45:48,684 : INFO : main : <module> : Command registered - alexa
+2020-04-21 18:45:48,836 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 18:46:11,719 : INFO : main : <module> : Command registered - elektra
+2020-04-21 18:46:11,923 : INFO : main : add_word : Word added to database successfully - elektra
+2020-04-21 18:46:16,710 : INFO : main : <module> : Command registered - alexa
+2020-04-21 18:46:16,859 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 18:46:42,398 : INFO : main : <module> : Command registered - alexa
+2020-04-21 18:46:42,575 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 18:46:51,511 : INFO : main : active_agent : Command registered on active agent - pogoda
+2020-04-21 18:46:51,511 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-21 18:46:51,516 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 18:46:51,857 : INFO : function : weather : Getting weather...
+2020-04-21 18:46:51,857 : INFO : function : weather : Temperatura: 13.51 stopni Celsjusza, ciœnienie: 995 hektopaskali
+2020-04-21 18:47:19,567 : INFO : main : <module> : Command registered - alexa
+2020-04-21 18:47:19,717 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 18:47:26,853 : INFO : main : active_agent : Command registered on active agent - wy³¹cz siê
+2020-04-21 18:47:26,854 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-21 18:47:28,472 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 18:47:28,473 : INFO : function : shutdown : Shutting down...
