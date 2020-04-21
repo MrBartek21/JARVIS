@@ -156,6 +156,22 @@ def short(text, choice):
     text = change(text, 'ń', 'n')
     return text
 
+
+# Active status update function
+def active_status(u_id, dev_code):
+    u_id = str(u_id)
+    dev_code = str(dev_code)
+    try:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=active&key='+config.TOKEN_ACTIVE+'&UserID='+u_id+'&Code='+dev_code) as response:
+            res = response.read()
+            res_encode = json.loads(res)
+            if res_encode['Code'] == 0:
+                logging.info('Activity status changed correctly - Code '+str(res_encode['Code']))
+            else:
+                logging.info('Activity status changed incorrectly - Code '+str(res_encode['Code']))
+    except urllib.error.URLError as e:
+        logging.warning(short(e.reason, 'error'))
+
 # =======================================================================================
 
 
@@ -195,13 +211,14 @@ def recognize_speech_from_mic(recognizer, microphone, lang):
     return response
 
 
-def active_agent(lang):
+def active_agent(settings):
     global word_find
     tts_engine.say(config.RESPONSE)
     tts_engine.runAndWait()
+    active_status(settings['userid'], config.CODE)
 
     # Wait for a user speech
-    user_word_agent = recognize_speech_from_mic(recognizer, microphone, lang)
+    user_word_agent = recognize_speech_from_mic(recognizer, microphone, settings['lang'])
 
     # If speech is recognize correctly
     if user_word_agent['state'] == "OK":
@@ -333,7 +350,7 @@ if __name__ == "__main__":
 
             # If user activate a bot
             if recognize_word == user_settings['activator']:
-                active_agent(user_settings['lang'])
+                active_agent(user_settings)
         elif user_word['state'] == "API":
             # Unable to connect to server recognize
             logging.info("Unable to connect to server speech recognize")

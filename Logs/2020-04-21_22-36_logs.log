@@ -1,0 +1,32 @@
+2020-04-21 22:36:08,666 : INFO : main : <module> : Starting...
+2020-04-21 22:36:08,671 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 22:36:08,675 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 22:36:08,902 : INFO : main : check_connection : Server connection valid
+2020-04-21 22:36:08,904 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 22:36:08,905 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 22:36:09,016 : INFO : main : system_info : Debug data sent
+2020-04-21 22:36:09,100 : INFO : main : check_update : No updates available - words.json
+2020-04-21 22:36:09,209 : INFO : main : check_update : No updates available - user.json
+2020-04-21 22:36:42,374 : INFO : main : <module> : Command registered - alexa
+2020-04-21 22:36:42,529 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 22:36:44,004 : INFO : main : active_status : Activity status changed correctly - 0
+2020-04-21 22:36:50,837 : INFO : main : active_agent : Command registered on active agent - wy³¹cz siê
+2020-04-21 22:36:50,838 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-21 22:36:52,426 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 22:36:52,427 : INFO : function : shutdown : Shutting down...
+2020-04-21 22:36:58,644 : INFO : main : <module> : Starting...
+2020-04-21 22:36:58,648 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 22:36:58,650 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 22:36:58,775 : INFO : main : check_connection : Server connection valid
+2020-04-21 22:36:58,776 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 22:36:58,777 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 22:36:59,029 : INFO : main : system_info : Debug data sent
+2020-04-21 22:36:59,131 : INFO : main : check_update : No updates available - words.json
+2020-04-21 22:36:59,240 : INFO : main : check_update : No updates available - user.json
+2020-04-21 22:37:38,984 : INFO : main : <module> : Command registered - alexa
+2020-04-21 22:37:39,121 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 22:37:40,544 : INFO : main : active_status : Activity status changed correctly - 0
+2020-04-21 22:37:48,142 : INFO : main : active_agent : Command registered on active agent - wy³¹cz siê
+2020-04-21 22:37:48,142 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-21 22:37:49,742 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 22:37:49,743 : INFO : function : shutdown : Shutting down...

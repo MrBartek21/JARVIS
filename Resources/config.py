@@ -8,6 +8,7 @@ TOKEN_ADD_WORD = 'f9L7Gg9elNpSjKJnUG8p'
 TOKEN_WEATHER = '4NFoW3yvFxsrkzlfS7sE'
 TOKEN_STATUS = 'eCGHfy3dBxFrQQbt3KkQ'
 TOKEN_UPDATE = 'tDoN9DKZcoWSu7jjpi9J'
+TOKEN_ACTIVE = 'nmR3tWSEqXHTJvE1Fzv7'
 
 # Link to main server
 HEADURL = 'http'
