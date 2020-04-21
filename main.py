@@ -60,7 +60,7 @@ def check_update(user_id, file, version):
                     logging.info("No updates available - "+file)
                     status = False
             else:
-                logging.info('No updates available - ' + res_encode['Code'] + ' ' + res_encode['Description'])
+                logging.info('Unable to check for updates - ' + res_encode['Code'] + ' ' + res_encode['Description'])
                 status = False
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
@@ -79,26 +79,27 @@ def system_info(userid):
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
                 logging.info('Debug data sent')
+            else:
+                logging.info('Debug data not sent - '+res_encode['Code']+' '+res_encode['Description'])
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
 
 
 # Add word to database to machine learning
-def add_word(text, actionid, action):
+def add_word(text, u_id, active_bot):
     text_short = short(text, 'all')
+    u_id = str(u_id)
+    active_bot = str(active_bot)
     try:
-        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text_short+'&ACNU='+str(actionid)+'&Action='+action) as response:
+        with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text_short+'&UserID='+u_id+'&Active='+active_bot) as response:
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                logging.info('Word added to database successfully - '+text)
-
-            status = True
+                logging.info('The word has been successfully sent to the database - '+text)
+            else:
+                logging.info('The word was not successfully sent to the database - '+text+' - '+res_encode['Code']+' '+res_encode['Description'])
     except urllib.error.URLError as e:
         logging.warning(short(e.reason, 'error'))
-        status = False
-
-    return status
 
 
 # Led information function
@@ -224,6 +225,7 @@ def active_agent(settings):
     if user_word_agent['state'] == "OK":
         recognize_word_agent = user_word_agent['transcription'].lower()
         logging.info("Command registered on active agent - " + recognize_word_agent)
+        add_word(recognize_word_agent, settings['userid'], 1)
 
         find = False
         for i in range(words['count']):
@@ -246,8 +248,6 @@ def active_agent(settings):
                 tts_engine.say(word_find['response'])
                 tts_engine.runAndWait()
 
-                state_aw = add_word(recognize_word, str(action_id), word_find['action'])
-
                 method_to_call = getattr(function, word_find['action'])
                 result = method_to_call()
             elif action_id == 2:
@@ -269,7 +269,6 @@ def active_agent(settings):
         else:
             tts_engine.say(config.NO_RESPONSE)
             tts_engine.runAndWait()
-            state_aw = add_word(recognize_word, -1, 'ERROR')
     elif user_word_agent['state'] == "API":
         # Unable to connect to server recognize
         logging.info("Unable to connect to server speech recognize on active agent")
@@ -346,7 +345,7 @@ if __name__ == "__main__":
         if user_word['state'] == "OK":
             recognize_word = user_word['transcription'].lower()
             logging.info("Command registered - " + recognize_word)
-            state_aw = add_word(recognize_word, 0, "")
+            state_aw = add_word(recognize_word, user_settings['userid'], 0)
 
             # If user activate a bot
             if recognize_word == user_settings['activator']:
