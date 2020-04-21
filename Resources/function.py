@@ -29,23 +29,24 @@ def weather():
             res = response.read()
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
-                # print(res_encode)
                 logging.info('Getting weather...')
 
                 weather_json = res_encode['Weather']
-                print(weather_json['main'])
 
                 temperature = weather_json['main']['temp'] - 273.15
                 temperature = round(temperature, 2)
                 pressure = weather_json['main']['pressure']
+                humidity = weather_json['main']['humidity']
 
-                state['weather'] = "Temperatura: "+str(temperature)+' stopni Celsjusza, ciśnienie: '+str(pressure)+' hektopaskali'
+                state['weather'] = "Temperatura: "+str(temperature)+' stopni Celsjusza, ciśnienie: '+str(pressure)+' hektopaskali, wilgotność '+str(humidity)+' procent.'
 
-                logging.info(state['weather'])
-            state['status'] = True
+                logging.info('Weather - '+state['weather'])
+                state['status'] = True
+            else:
+                state['status'] = False
     except urllib.error.URLError as e:
         logging.warning(m.short(e.reason, 'error'))
-        print(e.reason)
         state['status'] = False
 
     return state
+

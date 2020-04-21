@@ -196,13 +196,14 @@ def recognize_speech_from_mic(recognizer, microphone, lang):
 
 
 def active_agent(lang):
+    global word_find
     tts_engine.say(config.RESPONSE)
     tts_engine.runAndWait()
 
     # Wait for a user speech
     user_word_agent = recognize_speech_from_mic(recognizer, microphone, lang)
 
-    # If speech is recognize corectly
+    # If speech is recognize correctly
     if user_word_agent['state'] == "OK":
         recognize_word_agent = user_word_agent['transcription'].lower()
         logging.info("Command registered on active agent - " + recognize_word_agent)
@@ -241,6 +242,12 @@ def active_agent(lang):
 
                 if result['status']:
                     tts_engine.say(word_find['response'] + result['weather'])
+                    tts_engine.runAndWait()
+                else:
+                    # Unable to connect to server recognize
+                    led("red", "full")
+                    logging.info("Unable to connect to server speech recognize on active agent")
+                    tts_engine.say(config.API_ERROR)
                     tts_engine.runAndWait()
         else:
             tts_engine.say(config.NO_RESPONSE)
