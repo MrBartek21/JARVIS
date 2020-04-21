@@ -1,0 +1,32 @@
+2020-04-21 02:36:07,692 : INFO : main : <module> : Starting...
+2020-04-21 02:36:07,697 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 02:36:07,701 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 02:36:07,795 : INFO : main : check_connection : Server connection valid
+2020-04-21 02:36:07,797 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 02:36:07,799 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 02:36:07,962 : INFO : main : system_info : Debug data sent
+2020-04-21 02:36:08,058 : INFO : main : check_update : No updates available - words.json
+2020-04-21 02:36:08,178 : INFO : main : check_update : No updates available - user.json
+2020-04-21 02:36:45,353 : INFO : main : <module> : Starting...
+2020-04-21 02:36:45,369 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 02:36:45,375 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 02:36:45,473 : INFO : main : check_connection : Server connection valid
+2020-04-21 02:36:45,475 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 02:36:45,476 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 02:36:45,615 : INFO : main : system_info : Debug data sent
+2020-04-21 02:36:45,695 : INFO : main : check_update : No updates available - words.json
+2020-04-21 02:36:45,771 : INFO : main : check_update : No updates available - user.json
+2020-04-21 02:36:55,442 : INFO : main : <module> : Command registered - alexa
+2020-04-21 02:36:55,581 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 02:37:02,489 : INFO : main : active_agent : Command registered on active bot - pogoda
+2020-04-21 02:37:02,494 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-21 02:37:02,874 : INFO : function : weather : Getting weather...
+2020-04-21 02:37:02,876 : INFO : function : weather : Temperatura: 3.33 stopni Celsjusza, ciœnienie: 1025 hektopaskali
+2020-04-21 02:37:14,284 : INFO : main : <module> : Command registered - alexa
+2020-04-21 02:37:14,504 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 02:37:26,962 : INFO : main : <module> : Command registered - alexa
+2020-04-21 02:37:27,075 : INFO : main : add_word : Word added to database successfully - alexa
+2020-04-21 02:37:32,380 : INFO : main : active_agent : Command registered on active bot - wy³¹cz siê
+2020-04-21 02:37:32,381 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-21 02:37:33,948 : INFO : main : add_word : Word added to database successfully - wy³¹cz siê
+2020-04-21 02:37:33,949 : INFO : function : shutdown : Shutting down...

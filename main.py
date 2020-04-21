@@ -160,7 +160,7 @@ def short(text, choice):
 
 
 # recognize speak
-def recognize_speech_from_mic(recognizer, microphone):
+def recognize_speech_from_mic(recognizer, microphone, lang):
     if not isinstance(recognizer, sr.Recognizer):
         raise TypeError("`recognizer` must be `Recognizer` instance")
 
@@ -183,7 +183,7 @@ def recognize_speech_from_mic(recognizer, microphone):
     '''
 
     try:
-        response["transcription"] = recognizer.recognize_google(audio, language=user_settings['lang'])
+        response["transcription"] = recognizer.recognize_google(audio, language=lang)
         response["state"] = "OK"
     except sr.RequestError:
         # API was unreachable or unresponsive
@@ -194,12 +194,12 @@ def recognize_speech_from_mic(recognizer, microphone):
     return response
 
 
-def active_agent():
+def active_agent(lang):
     tts_engine.say(config.RESPONSE)
     tts_engine.runAndWait()
 
     # Wait for a user speech
-    user_word = recognize_speech_from_mic(recognizer, microphone)
+    user_word = recognize_speech_from_mic(recognizer, microphone, lang)
     print(user_word)
 
     # If speech is recognize corectly
@@ -308,8 +308,9 @@ if __name__ == "__main__":
     # Main loop
     while active:
         # Wait for a user speech
-        user_word = recognize_speech_from_mic(recognizer, microphone)
-
+        user_word = recognize_speech_from_mic(recognizer, microphone, user_settings['lang'])
+        print(user_word)
+        
         # If speech is recognize correctly
         if user_word['state'] == "OK":
             recognize_word = user_word['transcription'].lower()
@@ -318,7 +319,7 @@ if __name__ == "__main__":
 
             # If user activate a bot
             if recognize_word == user_settings['activator']:
-                active_agent()
+                active_agent(user_settings['lang'])
         elif user_word['state'] == "API":
             # Unable to connect to server recognize
             logging.info("Unable to connect to server, restart wymagany")
