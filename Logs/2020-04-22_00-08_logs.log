@@ -1,0 +1,17 @@
+2020-04-22 00:08:58,508 : INFO : main : <module> : Starting...
+2020-04-22 00:08:58,517 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-22 00:08:58,520 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-22 00:08:58,669 : INFO : main : check_connection : Server connection valid
+2020-04-22 00:08:58,671 : INFO : main : load_json : File load successfully - words.json
+2020-04-22 00:08:58,672 : INFO : main : load_json : File load successfully - user.json
+2020-04-22 00:08:58,849 : INFO : main : system_info : Debug data sent
+2020-04-22 00:08:58,949 : INFO : main : check_update : No updates available - words.json
+2020-04-22 00:08:59,066 : INFO : main : check_update : No updates available - user.json
+2020-04-22 00:09:08,106 : INFO : main : <module> : Command registered - halo
+2020-04-22 00:09:08,253 : INFO : main : add_word : The word has been successfully sent to the database - halo
+2020-04-22 00:09:17,449 : INFO : main : <module> : Command registered - czy love is madness 4
+2020-04-22 00:09:17,598 : INFO : main : add_word : The word has been successfully sent to the database - czy love is madness 4
+2020-04-22 00:09:23,559 : INFO : main : <module> : Command registered - 3
+2020-04-22 00:09:23,709 : INFO : main : add_word : The word has been successfully sent to the database - 3
+2020-04-22 00:09:36,405 : INFO : main : <module> : Command registered - czy
+2020-04-22 00:09:36,568 : INFO : main : add_word : The word has been successfully sent to the database - czy

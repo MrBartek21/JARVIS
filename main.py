@@ -227,6 +227,10 @@ def active_agent(settings):
         logging.info("Command registered on active agent - " + recognize_word_agent)
         add_word(recognize_word_agent, settings['userid'], 1)
 
+        result = recognize_word_agent.find('czy')
+        if result == 0:
+            recognize_word_agent = "czy"
+
         find = False
         for i in range(words['count']):
             word = words['word' + str(i + 1)]
@@ -249,8 +253,9 @@ def active_agent(settings):
                 tts_engine.runAndWait()
 
                 method_to_call = getattr(function, word_find['action'])
-                result = method_to_call()
+                method_to_call()
             elif action_id == 2:
+                # Response action and response action
                 logging.info("ACTION " + str(action_id) + " - " + word_find['action'])
 
                 method_to_call = getattr(function, word_find['action'])
@@ -258,7 +263,7 @@ def active_agent(settings):
                 print(result)
 
                 if result['status']:
-                    tts_engine.say(word_find['response'] + result['weather'])
+                    tts_engine.say(word_find['response'] + result['response'])
                     tts_engine.runAndWait()
                 else:
                     # Unable to connect to server recognize
@@ -345,7 +350,7 @@ if __name__ == "__main__":
         if user_word['state'] == "OK":
             recognize_word = user_word['transcription'].lower()
             logging.info("Command registered - " + recognize_word)
-            state_aw = add_word(recognize_word, user_settings['userid'], 0)
+            add_word(recognize_word, user_settings['userid'], 0)
 
             # If user activate a bot
             if recognize_word == user_settings['activator']:

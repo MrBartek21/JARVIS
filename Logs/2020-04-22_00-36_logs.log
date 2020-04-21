@@ -1,0 +1,21 @@
+2020-04-22 00:36:56,483 : INFO : main : <module> : Starting...
+2020-04-22 00:36:56,491 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-22 00:36:56,496 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-22 00:36:56,590 : INFO : main : check_connection : Server connection valid
+2020-04-22 00:36:56,592 : INFO : main : load_json : File load successfully - words.json
+2020-04-22 00:36:56,593 : INFO : main : load_json : File load successfully - user.json
+2020-04-22 00:36:56,764 : INFO : main : system_info : Debug data sent
+2020-04-22 00:36:56,870 : INFO : main : check_update : Updating - <_io.TextIOWrapper name='words.json' mode='w' encoding='cp1250'> from version 1 to 2
+2020-04-22 00:36:57,016 : INFO : main : check_update : No updates available - user.json
+2020-04-22 00:37:12,524 : INFO : main : <module> : Command registered - alexa
+2020-04-22 00:37:12,650 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-04-22 00:37:14,183 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-04-22 00:37:19,785 : INFO : main : active_agent : Command registered on active agent - czy jestem m¹dry
+2020-04-22 00:37:19,922 : INFO : main : add_word : The word has been successfully sent to the database - czy jestem m¹dry
+2020-04-22 00:37:31,108 : INFO : main : <module> : Command registered - alexa
+2020-04-22 00:37:31,257 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-04-22 00:37:32,669 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-04-22 00:37:37,562 : INFO : main : active_agent : Command registered on active agent - wy³¹cz siê
+2020-04-22 00:37:37,706 : INFO : main : add_word : The word has been successfully sent to the database - wy³¹cz siê
+2020-04-22 00:37:37,707 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-22 00:37:39,149 : INFO : function : shutdown : Shutting down...
