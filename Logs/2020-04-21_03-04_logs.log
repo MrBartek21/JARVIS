@@ -1,0 +1,15 @@
+2020-04-21 03:04:15,865 : INFO : main : <module> : Starting...
+2020-04-21 03:04:15,876 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 03:04:15,886 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 03:04:15,927 : WARNING : main : check_connection : Internal Server Error
+2020-04-21 03:04:58,299 : INFO : main : <module> : Starting...
+2020-04-21 03:04:58,304 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 03:04:58,308 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 03:04:58,422 : INFO : main : check_connection : Server connection valid
+2020-04-21 03:04:58,436 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 03:04:58,437 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 03:04:58,564 : INFO : main : system_info : Debug data sent
+2020-04-21 03:04:58,655 : INFO : main : check_update : No updates available - words.json
+2020-04-21 03:04:58,797 : INFO : main : check_update : Updating - <_io.TextIOWrapper name='user.json' mode='w' encoding='cp1250'> from version 1 to 2
+2020-04-21 03:04:58,799 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 03:04:58,809 : INFO : main : load_json : File load successfully - user.json
