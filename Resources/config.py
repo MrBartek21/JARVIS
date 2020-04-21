@@ -19,7 +19,6 @@ LOG_LEVEL = logging.INFO
 LOG_FOLDER = 'Logs'
 LOG_FILENAME = 'logs.log'
 LOG_FILE = datetime.now().strftime('%Y-%m-%d_%H-%M_'+LOG_FILENAME)
-print(LOG_FILE)
 
 # File and folder name
 FILE_WORDS = "words.json"
