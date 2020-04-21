@@ -30,6 +30,7 @@ CODE = "8520"
 
 
 #SPEECH
-NO_CONNECTION = "Nie mogę połączyć się z internetem, zrestartuj urządzenie"
-NO_RESPONSE = "Przepraszam nie rozumiem"
-RESPONSE = "Slucham"
+NO_CONNECTION = "Nie mogę nawiązać połączenia, proszę zrestartuj urządzenie."
+API_ERROR = "Nie mogę w tej chwili rozpoznać mowy, proszę spróbuj później."
+NO_RESPONSE = "Przepraszam nie rozumiem."
+RESPONSE = "Slucham."

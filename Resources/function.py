@@ -26,19 +26,19 @@ def weather():
     try:
         with urllib.request.urlopen(config.HEADURL + '://' + config.IP + '/Api/Api_v2.php?data=weather&key='+config.TOKEN_WEATHER) as response:
             res = response.read()
-            res_decode = json.loads(res)
-            if res_decode['Code'] == 0:
+            res_encode = json.loads(res)
+            if res_encode['Code'] == 0:
                 # print(res_encode)
                 logging.info('Getting weather...')
 
-                weather_json = res_decode['Weather']
+                weather_json = res_encode['Weather']
                 print(weather_json['main'])
 
                 temperature = weather_json['main']['temp'] - 273.15
                 temperature = round(temperature, 2)
                 pressure = weather_json['main']['pressure']
 
-                state['weather'] = "Temperatura: " + str(temperature) + ' stopni Celsjusza, ciśnienie: ' + str(pressure) + ' hektopaskali'
+                state['weather'] = "Temperatura: "+str(temperature)+' stopni Celsjusza, ciśnienie: '+str(pressure)+' hektopaskali'
 
                 logging.info(state['weather'])
             state['status'] = True

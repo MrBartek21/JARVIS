@@ -3,8 +3,6 @@
 2 odpowiedz z akcją i tym co ona zwróci
 3 potwierdzenie wykonania akcji
 
-deafult_user.json
-    ustawienia domyślne tylko w wypadku gdy nie będzie wykrytych ustawień uzytkownika i gdy nie będzie włożonej karty SD
 
 user.json
     ustawienia użytkownika ładowane podczas startu asystenta
@@ -26,3 +24,8 @@ led color
     yellow brak połączenia z kontem
     red brak połączenia z internetem
     green wszystko okej trwa nasłuchiwanie
+
+led anim
+    full wszystkie na raz
+    fade wypełnienie
+    ring od pierwszego do ostatniego

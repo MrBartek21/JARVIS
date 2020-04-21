@@ -178,7 +178,7 @@ def recognize_speech_from_mic(recognizer, microphone, lang):
 
     '''
     state = ok jezeli przetłumaczono słowa
-    state = api jezeli nie mozna poczłaczy wymagany restart 
+    state = api jezeli nie mozna poczłaczy
     state = unable recognize jezeli nie mozna rozpoznac, czekanie na kolejna kolejke
     '''
 
@@ -199,18 +199,18 @@ def active_agent(lang):
     tts_engine.runAndWait()
 
     # Wait for a user speech
-    user_word = recognize_speech_from_mic(recognizer, microphone, lang)
-    print(user_word)
+    user_word_agent = recognize_speech_from_mic(recognizer, microphone, lang)
+    print(user_word_agent)
 
     # If speech is recognize corectly
-    if user_word['state'] == "OK":
-        recognize_word = user_word['transcription'].lower()
-        logging.info("Command registered on active bot - " + recognize_word)
+    if user_word_agent['state'] == "OK":
+        recognize_word_agent = user_word_agent['transcription'].lower()
+        logging.info("Command registered on active agent - " + recognize_word_agent)
 
         find = False
         for i in range(words['count']):
             word = words['word' + str(i + 1)]
-            if recognize_word == word['name']:
+            if recognize_word_agent == word['name']:
                 word_find = word
                 find = True
 
@@ -246,6 +246,12 @@ def active_agent(lang):
             tts_engine.say(config.NO_RESPONSE)
             tts_engine.runAndWait()
             state_aw = add_word(recognize_word, -1, 'ERROR')
+    elif user_word_agent['state'] == "API":
+        # Unable to connect to server recognize
+        logging.info("Unable to connect to server speech recognize on active agent")
+        tts_engine.say(config.API_ERROR)
+        tts_engine.runAndWait()
+        led("red", "ring")
 
 
 # Main function
@@ -269,7 +275,7 @@ if __name__ == "__main__":
     # Check connection init
     if check_connection():
         # Active main loop and check all file and update
-        led("green", "all")
+        led("green", "ring")
 
         # Loads all file
         words = load_json(config.FILE_WORDS)
@@ -300,17 +306,19 @@ if __name__ == "__main__":
         # Stop main loop
         active = False
         # Ledy czerwone powiedz że nie ma połączenia
+        tts_engine.say(config.NO_CONNECTION)
+        tts_engine.runAndWait()
         led("red", "all")
 
     time.sleep(5)
     if active:
-        led("black", "all")
+        led("black", "ring")
     # Main loop
     while active:
         # Wait for a user speech
         user_word = recognize_speech_from_mic(recognizer, microphone, user_settings['lang'])
         print(user_word)
-        
+
         # If speech is recognize correctly
         if user_word['state'] == "OK":
             recognize_word = user_word['transcription'].lower()
@@ -322,6 +330,5 @@ if __name__ == "__main__":
                 active_agent(user_settings['lang'])
         elif user_word['state'] == "API":
             # Unable to connect to server recognize
-            logging.info("Unable to connect to server, restart wymagany")
-            tts_engine.say(config.NO_CONNECTION)
-            tts_engine.runAndWait()
+            logging.info("Unable to connect to server speech recognize")
+            led("red", "ring")
