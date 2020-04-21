@@ -1,0 +1,36 @@
+2020-04-21 23:55:42,877 : INFO : main : <module> : Starting...
+2020-04-21 23:55:42,885 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 23:55:42,893 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 23:55:43,064 : INFO : main : check_connection : Server connection valid
+2020-04-21 23:55:43,065 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 23:55:43,066 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 23:55:43,264 : INFO : main : system_info : Debug data sent
+2020-04-21 23:55:43,353 : INFO : main : check_update : No updates available - words.json
+2020-04-21 23:55:43,453 : INFO : main : check_update : No updates available - user.json
+2020-04-21 23:55:52,819 : INFO : main : <module> : Command registered - alexa
+2020-04-21 23:55:52,995 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-04-21 23:55:54,414 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-04-21 23:55:58,406 : INFO : main : active_agent : Command registered on active agent - pogoda
+2020-04-21 23:55:58,573 : INFO : main : add_word : The word has been successfully sent to the database - pogoda
+2020-04-21 23:55:58,574 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-21 23:55:58,578 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 23:55:58,884 : INFO : function : weather : Getting weather...
+2020-04-21 23:55:58,895 : INFO : function : weather : Weather - Temperatura: 6.19 stopni Celsjusza, ciœnienie: 1025 hektopaskali, wilgotnoœæ 67 procent.
+2020-04-21 23:56:13,756 : INFO : main : <module> : Command registered - raz dwa trzy
+2020-04-21 23:56:13,896 : INFO : main : add_word : The word has been successfully sent to the database - raz dwa trzy
+2020-04-21 23:56:22,416 : INFO : main : <module> : Command registered - alexa
+2020-04-21 23:56:22,692 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-04-21 23:56:24,203 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-04-21 23:56:31,670 : INFO : main : active_agent : Command registered on active agent - pogoda
+2020-04-21 23:56:31,796 : INFO : main : add_word : The word has been successfully sent to the database - pogoda
+2020-04-21 23:56:31,797 : INFO : main : active_agent : ACTION 2 - weather
+2020-04-21 23:56:31,800 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 23:56:32,007 : INFO : function : weather : Getting weather...
+2020-04-21 23:56:32,024 : INFO : function : weather : Weather - Temperatura: 6.19 stopni Celsjusza, ciœnienie: 1025 hektopaskali, wilgotnoœæ 67 procent.
+2020-04-21 23:57:40,610 : INFO : main : <module> : Command registered - alexa
+2020-04-21 23:57:40,818 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-04-21 23:57:42,262 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-04-21 23:57:47,079 : INFO : main : active_agent : Command registered on active agent - wy³¹cz siê
+2020-04-21 23:57:47,210 : INFO : main : add_word : The word has been successfully sent to the database - wy³¹cz siê
+2020-04-21 23:57:47,211 : INFO : main : active_agent : ACTION 1 - shutdown
+2020-04-21 23:57:48,641 : INFO : function : shutdown : Shutting down...
