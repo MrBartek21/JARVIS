@@ -1,0 +1,9 @@
+2020-04-21 22:29:16,672 : INFO : main : <module> : Starting...
+2020-04-21 22:29:16,676 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 22:29:16,679 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 22:29:16,775 : INFO : main : check_connection : Server connection valid
+2020-04-21 22:29:16,777 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 22:29:16,778 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 22:29:16,926 : INFO : main : system_info : Debug data sent
+2020-04-21 22:29:17,022 : INFO : main : check_update : No updates available - words.json
+2020-04-21 22:29:17,125 : INFO : main : check_update : No updates available - user.json

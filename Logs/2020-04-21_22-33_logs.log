@@ -1,0 +1,13 @@
+2020-04-21 22:33:08,438 : INFO : main : <module> : Starting...
+2020-04-21 22:33:08,446 : INFO : main : check_json : The file exists and is valid - words.json
+2020-04-21 22:33:08,450 : INFO : main : check_json : The file exists and is valid - user.json
+2020-04-21 22:33:08,531 : INFO : main : check_connection : Server connection valid
+2020-04-21 22:33:08,533 : INFO : main : load_json : File load successfully - words.json
+2020-04-21 22:33:08,534 : INFO : main : load_json : File load successfully - user.json
+2020-04-21 22:33:08,683 : INFO : main : system_info : Debug data sent
+2020-04-21 22:33:08,813 : INFO : main : check_update : No updates available - words.json
+2020-04-21 22:33:08,965 : INFO : main : check_update : No updates available - user.json
+2020-04-21 22:33:37,262 : INFO : main : <module> : Command registered - aleksa aleksa
+2020-04-21 22:33:37,399 : INFO : main : add_word : Word added to database successfully - aleksa aleksa
+2020-04-21 22:33:42,169 : INFO : main : <module> : Command registered - alexa
+2020-04-21 22:33:42,320 : INFO : main : add_word : Word added to database successfully - alexa
