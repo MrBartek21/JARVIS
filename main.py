@@ -24,6 +24,7 @@ def check_connection():
     try:
         with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS) as response:
             res = response.read()
+            res = res.decode("utf-8")
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
                 status = True
@@ -46,6 +47,7 @@ def check_update(user_id, file, version):
     try:
         with urllib.request.urlopen(config.HEADURL+'://'+config.IP +'/Api/Api_v2.php?data=update&key='+config.TOKEN_UPDATE+'&UserID='+user_id+'&File='+file+'&Version='+version) as response:
             res = response.read()
+            res = res.decode("utf-8")
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
 
@@ -84,6 +86,7 @@ def system_info(userid):
     try:
         with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=status&key='+config.TOKEN_STATUS+'&add=Yes&UserID='+str(userid)+'&Code='+str(config.CODE)+'&machine='+sys_info['machine']+'&version='+sys_info['version']+'&system='+sys_info['system']) as response:
             res = response.read()
+            res = res.decode("utf-8")
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
                 logging.info('Debug data sent')
@@ -101,6 +104,7 @@ def add_word(text, u_id, active_bot):
     try:
         with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=waadd&key='+config.TOKEN_ADD_WORD+'&Word='+text_short+'&UserID='+u_id+'&Active='+active_bot) as response:
             res = response.read()
+            res = res.decode("utf-8")
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
                 logging.info('The word has been successfully sent to the database - '+text)
@@ -186,6 +190,7 @@ def active_status(u_id, dev_code):
     try:
         with urllib.request.urlopen(config.HEADURL+'://'+config.IP+'/Api/Api_v2.php?data=active&key='+config.TOKEN_ACTIVE+'&UserID='+u_id+'&Code='+dev_code) as response:
             res = response.read()
+            res = res.decode("utf-8")
             res_encode = json.loads(res)
             if res_encode['Code'] == 0:
                 logging.info('Activity status changed correctly - Code '+str(res_encode['Code']))
