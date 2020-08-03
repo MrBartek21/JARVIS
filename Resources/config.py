@@ -12,7 +12,7 @@ TOKEN_ACTIVE = 'nmR3tWSEqXHTJvE1Fzv7'
 
 # Link to main server
 HEADURL = 'http'
-IP = '192.168.1.10'
+IP = 'classicgames.sytes.net'
 
 # Log formatting
 LOG_FORMAT = "%(asctime)s : %(levelname)s : %(module)s : %(funcName)s : %(message)s"

@@ -1,0 +1,45 @@
+2020-07-09 19:47:35,418 : INFO : main : <module> : Starting...
+2020-07-09 19:47:35,436 : INFO : main : check_json : The file exists and is valid - words.json
+2020-07-09 19:47:35,441 : INFO : main : check_json : The file exists and is valid - user.json
+2020-07-09 19:47:39,780 : INFO : main : check_connection : Server connection valid
+2020-07-09 19:47:39,783 : INFO : main : load_json : File load successfully - words.json
+2020-07-09 19:47:39,793 : INFO : main : load_json : File load successfully - user.json
+2020-07-09 19:47:42,390 : INFO : main : system_info : Debug data sent
+2020-07-09 19:47:46,428 : INFO : main : check_update : Updating - <_io.TextIOWrapper name='words.json' mode='w' encoding='cp1250'> from version 1 to 2
+2020-07-09 19:47:48,165 : INFO : main : check_update : No updates available - user.json
+2020-07-09 19:48:35,429 : INFO : main : <module> : Command registered - nie dzia³a to w ogóle czy nie wiedzia³em
+2020-07-09 19:48:38,196 : INFO : main : add_word : The word has been successfully sent to the database - nie dzia³a to w ogóle czy nie wiedzia³em
+2020-07-09 19:48:44,105 : INFO : main : <module> : Command registered - alexa
+2020-07-09 19:48:46,116 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-07-09 19:48:49,635 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-07-09 19:49:00,388 : INFO : main : <module> : Command registered - alexa
+2020-07-09 19:49:05,177 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-07-09 19:49:08,267 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-07-09 19:49:24,639 : INFO : main : <module> : Command registered - uspokój siê aleksa
+2020-07-09 19:49:26,383 : INFO : main : add_word : The word has been successfully sent to the database - uspokój siê aleksa
+2020-07-09 19:50:07,414 : INFO : main : <module> : Command registered - dobra zamknij siê
+2020-07-09 19:50:09,772 : INFO : main : add_word : The word has been successfully sent to the database - dobra zamknij siê
+2020-07-09 19:50:41,596 : INFO : main : <module> : Command registered - alexa
+2020-07-09 19:50:43,404 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-07-09 19:50:46,640 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-07-09 19:51:07,532 : INFO : main : <module> : Command registered - alexa
+2020-07-09 19:51:11,123 : INFO : main : add_word : The word has been successfully sent to the database - alexa
+2020-07-09 19:51:14,585 : INFO : main : active_status : Activity status changed correctly - Code 0
+2020-07-09 19:51:35,514 : INFO : main : active_agent : Command registered on active agent - pogoda
+2020-07-09 19:51:38,018 : INFO : main : add_word : The word has been successfully sent to the database - pogoda
+2020-07-09 19:51:38,019 : INFO : main : active_agent : ACTION 2 - weather
+2020-07-09 19:51:38,023 : INFO : function : load_json : File load successfully - user.json
+2020-07-09 19:51:40,027 : INFO : function : weather : Getting weather...
+2020-07-09 19:51:40,027 : INFO : function : weather : Weather - Temperatura: 21.67 stopni Celsjusza, ciœnienie: 1016 hektopaskali, wilgotnoœæ 94 procent.
+2020-07-09 19:52:09,742 : INFO : main : <module> : Command registered - davida
+2020-07-09 19:52:13,727 : INFO : main : add_word : The word has been successfully sent to the database - davida
+2020-07-09 19:52:20,610 : INFO : main : <module> : Command registered - waldek masz rok
+2020-07-09 19:52:23,293 : INFO : main : add_word : The word has been successfully sent to the database - waldek masz rok
+2020-07-09 19:52:29,135 : INFO : main : <module> : Command registered - dawida moker
+2020-07-09 19:52:30,916 : INFO : main : add_word : The word has been successfully sent to the database - dawida moker
+2020-07-09 19:53:04,076 : INFO : main : <module> : Command registered - gdzie jest nemo
+2020-07-09 19:53:07,389 : INFO : main : add_word : The word has been successfully sent to the database - gdzie jest nemo
+2020-07-09 19:53:13,746 : INFO : main : <module> : Command registered - beksa
+2020-07-09 19:53:15,546 : INFO : main : add_word : The word has been successfully sent to the database - beksa
+2020-07-09 19:53:23,275 : INFO : main : <module> : Command registered - mikrofon widzieæ
+2020-07-09 19:53:25,280 : INFO : main : add_word : The word has been successfully sent to the database - mikrofon widzieæ

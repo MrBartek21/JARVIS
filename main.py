@@ -11,15 +11,15 @@ import os
 import time
 
 #Import led
-import board
-import neopixel
+# import board
+# import neopixel
 
-pixel_pin = board.D18
-num_pixels = 8
-ORDER = neopixel.RGB
-pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
-)
+# pixel_pin = board.D18
+# num_pixels = 8
+# ORDER = neopixel.RGB
+# pixels = neopixel.NeoPixel(
+ #    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
+# )
 
 # Check connection
 def check_connection():
@@ -118,7 +118,8 @@ def add_word(text, u_id, active_bot):
 
 # Led information function
 def led(color, anim):
-    print(color)
+    pass
+"""   print(color)
     if color == 'black':
         pixels.fill((0, 0, 0))
     elif color == 'green':
@@ -131,7 +132,7 @@ def led(color, anim):
         pixels.fill((0, 0, 255))
     else:
         pixels.fill((255, 255, 255))
-    pixels.show()
+    pixels.show()"""
 
 
 # ====================================[FILE FUNCTION]====================================
